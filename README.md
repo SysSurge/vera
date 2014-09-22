@@ -161,6 +161,7 @@ Developer-centric open source framework with Web content management, search inde
   * Well documented.
   * Video tutorials directly from the mouth of the developers themselves.
   * Fully featured demo site "Silicon Burgers" is automatically created from the downloaded open source code.
+* Simple to style and make your own templates and controls.
 * Few dependencies; Microsoft Visual Studio 2013 and the Microsoft Azure SDK.
 * Open source license.
 * Extremely fast
