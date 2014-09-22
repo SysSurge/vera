@@ -81,43 +81,43 @@ Developer-centric open source framework with Web content management, search inde
 * Temporary files are stored locally on each node
 ### ASP.NET providers
 * Membership provider persists data in the Azure Table Storage.
-..* Social sign-in with Facebook, Google, etc. or with local users.
-..* Register account page with e-mail confirmation and Question/Answer.
-..* Sign In page with automatic locking after too many failed attempts.
-..* Sign Out page.
-..* Change password page with e-mail confirmation.
-..* Reset password page where new password is sent to e-mail account.
-..* Locked account functionality where user can unlock account using link sent to users e-mail account.
-..* User e-mail validation by using link sent after account validation, account is not activated before e-mail is validated.
-..* Admin page for user management.
-..* Admin page that shows some site statistics about the users.
+  * Social sign-in with Facebook, Google, etc. or with local users.
+  * Register account page with e-mail confirmation and Question/Answer.
+  * Sign In page with automatic locking after too many failed attempts.
+  * Sign Out page.
+  * Change password page with e-mail confirmation.
+  * Reset password page where new password is sent to e-mail account.
+  * Locked account functionality where user can unlock account using link sent to users e-mail account.
+  * User e-mail validation by using link sent after account validation, account is not activated before e-mail is validated.
+  * Admin page for user management.
+  * Admin page that shows some site statistics about the users.
 * Role provider persists data in the Azure Table Storage.
-..* Admin page for role management.
+  * Admin page for role management.
 * User Profile provider persists data in the Azure Table Storage.
-..* User profile page where user can update his/her settings and upload a profile image that is stored as a Azure Blob.
+  * User profile page where user can update his/her settings and upload a profile image that is stored as a Azure Blob.
 * Session-State provider persists data in the Azure Table Storage.
-..* Maintain session-state between server instances in the Azure cloud.
+  * Maintain session-state between server instances in the Azure cloud.
 * Sitemap provider.
-..* Automatic sitemap.xml file generation.
+  * Automatic sitemap.xml file generation.
 ### Background tasks
 * Framework for building multi-threaded worker role; each worker runs in its own thread.
-..* Easy to extend with your own background tasks.
+  * Easy to extend with your own background tasks.
 * Worker Role that cleans up expired session-state data from the Azure Table Storage.
 * Worker roles are monitored and automatically restarted if they go down.
 * Worker roles implement a back-off pattern to potentially save processing time costs.
 * Queue based E-mail worker role.
-..* All e-mail sent from the application is handled by a worker role that picks e-mails from the Azure Queue.
-..* Sends e-mail asynchronously.
-..* Logic prevents flooding the e-mail server when bulk e-mail lists are processed (like when sending newsletters).
-..* Simple API makes it easy to send e-mails from your code.
-..* Will wait for a set time and retry for a set amount of times if sending an e-mail fails.
-..* Simple to setup with your own SMTP e-mail server.
+  * All e-mail sent from the application is handled by a worker role that picks e-mails from the Azure Queue.
+  * Sends e-mail asynchronously.
+  * Logic prevents flooding the e-mail server when bulk e-mail lists are processed (like when sending newsletters).
+  * Simple API makes it easy to send e-mails from your code.
+  * Will wait for a set time and retry for a set amount of times if sending an e-mail fails.
+  * Simple to setup with your own SMTP e-mail server.
 ### Diagnostics & logging to the Azure Table and Blob Storage
 * Centralized application and system logging with Web UI.
 * View real-time performance for all cloud nodes with Web UI.
-..* Processor percentage.
-..* Available internal memory.
-..* Offline node notifications.
+  * Processor percentage.
+  * Available internal memory.
+  * Offline node notifications.
 * Windows events with Web UI.
 * Directories.
 * Infrastructure logs.
@@ -127,10 +127,10 @@ Developer-centric open source framework with Web content management, search inde
 * Users can vote up & down in forums, these actions affect the user's *social score*.
 * Favouring forum posts affect the user's *social score*.
 * User public profile pages
-..* See user social score
-..* See user comments.
-..* See user posts and favourites.
-..* Inter-messaging between users without revealing any e-mail addresses.
+  * See user social score
+  * See user comments.
+  * See user posts and favourites.
+  * Inter-messaging between users without revealing any e-mail addresses.
 ### Developer-centric
 * Few dependencies; Microsoft Visual Studio 2013 and the Microsoft Azure SDK.
 * Open source.
