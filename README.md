@@ -64,10 +64,15 @@ Developer-centric open source framework with Web content management, search inde
 * Page to upload files to the Azure Blob.
 * Page to view all your Azure Blob Files.
 * Page to edit a Azure Blob File.
+* Search page with hit highlighting.
 * All cloud nodes immediately reflect any changes to content across the cloud.
 * All templates uses HTML5 with CSS v3 and RDFa v1.1
 * Automatic RSS 2.0 syndication for all content pages
 * Newsletter functionality.
+* Rich-text HTML editor makes adding HTML to page content fields simple.
+* Simple to change UI styling for an entire site
+* All pre-made pages like search page, admin pages, and editor pages can be overridden with your own templates and/or logic.
+* Site map page.
 
 ### Performance
 * Pages are cached locally on each node and not retrieved from the database; and can therefore be loaded extremely fast.
@@ -91,7 +96,7 @@ Developer-centric open source framework with Web content management, search inde
 
 ### ASP.NET providers
 * Membership provider persists data in the Azure Table Storage.
-  * Social sign-in with Facebook, Google, etc. or with local users.
+  * Social sign-in with your Twitter, Facebook, Google, accounts etc., or with local users.
   * Register account page with e-mail confirmation and Question/Answer.
   * Sign In page with automatic locking after too many failed attempts.
   * Sign Out page.
@@ -136,6 +141,11 @@ Developer-centric open source framework with Web content management, search inde
 * Performance counters.
 * Trace logs.
 
+### Forums
+* Easy to create forums with pre-made templates.
+* Social features like user voting and post favouring.
+* Administrate all forum comments from one central location UI.
+
 ### Social features
 * Users can vote up & down in forums, these actions affect the user's *social score*.
 * Favouring forum posts affect the user's *social score*.
@@ -146,18 +156,24 @@ Developer-centric open source framework with Web content management, search inde
   * Inter-messaging between users without revealing any e-mail addresses.
 
 ### Developer-centric
+* Simple to learn
+  * Work with familiar technologies like .NET, C#, ASP.NET, HTML5 with CSS v3, JavaScript(JQuery), and RDFa v1.1.
+  * Well documented.
+  * Video tutorials directly from the mouth of the developers themselves.
+  * Fully featured demo site "Silicon Burgers" is automatically created from the downloaded open source code.
 * Few dependencies; Microsoft Visual Studio 2013 and the Microsoft Azure SDK.
-* Open source.
-* Fully featured demo site "Silicon Burgers" is automatically created from open source project.
-* Extremely fast and simple to develop with
+* Open source license.
+* Extremely fast
+  * Pre-optimized and pre-tuned solution by experts using well-known best practices.
+  * Automatic compression of style sheets, JavaScript, and the served HTML page to minimize size.
 * Lots of pre-made functionality like controls and templates
-* Simple to learn and well documented.
 * Simple to extend with your own page template, controls, background tasks, database functionality, entities etc.
 * Works with both ASP.NET web forms and ASP.NET MVC 5.
 * All code is written in the familiar C# v4.0 programming language for the Microsoft .NET v4.5.1 platform.
 * Simple to make work with TLS/SSL to enable HTTPS web sites.
-* Templates use HTML5 with CSS v3 and RDFa v1.1.
-* Highly & easily configurable to enable/disable the features that you don't want or need.
+* Highly and easily configurable; simple to enable or disable features.
+* Get code using GIT or download the whole solution in a ZIP package.
+* Tons of pre-made logic ready to use.
 
 ### Smart caching
 * Cloud nodes make very few database lookups and caches most content in-memory.
@@ -165,8 +181,8 @@ Developer-centric open source framework with Web content management, search inde
 * Smart caching saves you up to 90% of your storage transaction costs.
 
 ### Access control
-* ASP.NET memberships for users and roles
-* Manage users and roles using Web UI
+* ASP.NET memberships for users and roles.
+* Manage users and roles using Web UI.
 
 ### Simple licensing
 * Simple Apache v2.0 license with only one extra paragraph
@@ -174,4 +190,12 @@ Developer-centric open source framework with Web content management, search inde
 * Free to use in all your environments; pay only to remove title "VeraWAF" watermark.
 * No registration. No credit card required. No hidden fees. Cancel anytime.
 
-..and much more.
+### Security
+* Access control using ASP.NET user memberships and roles
+* Anti sign-in hammering that automatically bans IP addresses for a limited preset amount of time.
+* Anti request hammering that automatically bans IP addresses for a limited preset amount of time.
+* Anti post hammering that automatically bans IP addresses for a limited preset amount of time.
+* Anti e-mail hammering that automatically bans IP addresses for a limited preset amount of time.
+* Centralized logging makes it easy to see security issues across all the cloud nodes in one UI.
+
+...and much more.
