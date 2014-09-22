@@ -1,6 +1,6 @@
-# Vera Web App Fundamentals (VeraWAF)
-
 ![VeraWAF project logo](http://www.verawaf.com/Images/Logo_185x77.png "VeraWAF project logo")
+
+# Vera Web App Fundamentals (VeraWAF)
 
 Homepage: [VeraWAF project homepage](http://www.verawaf.com/) 
 
