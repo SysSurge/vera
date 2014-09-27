@@ -7,7 +7,7 @@ Homepage: [VeraWAF project homepage](http://www.verawaf.com/)
 ## Kickstarter open source framework for Microsoft(R) Azure(TM) Web Applications.
 Developer-centric open source framework with Web content management, search indexing, user managent, and much more. Have your Azure web app ready in minutes and save months or even years of work. Smart caching saves you up to 90% of your storage transaction costs.
 
->"Vera is great for programmers who wants to quickly start building Azure Web Applications without having to develop fundamental functionality like user and content management from scratch. Vera saves you months or more of research & development."* - Developer
+>"Vera is great for programmers who wants to quickly start building Azure Web Applications without having to develop fundamental functionality like user and content management from scratch. Vera saves you months or more of research & development, and lets you start developing your core business functionality straight away."* - Developer
 
 ### Reduce development time
 * Ready to be used fundamental functionality like access control, social sign-in, indexed search, Web Content Management, forums, newsletters, RSS feeds, and much more.
