@@ -73,13 +73,14 @@ Developer-centric open source framework with Web content management, search inde
 * Simple to change UI styling for an entire site
 * All pre-made pages like search page, admin pages, and editor pages can be overridden with your own templates and/or logic.
 * Site map page.
+* Manage multiple web site within a single Microsoft Azure Table Storage.
 
 ### Performance
 * Pages are cached locally on each node and not retrieved from the database; and can therefore be loaded extremely fast.
-* Automatic CSS style sheet compression/minimizing & merging
-* Automatic JavaScript compression/minimizing & merging 
-* Automatic HTML page compression
-* Images are loaded dynamically; e.g. images are only loaded when they are visible in the browser view.
+* Automatic CSS style sheet compression/minimizing & merging.
+* Automatic JavaScript compression/minimizing & merging.
+* Automatic HTML page compression.
+* Images are loaded dynamically; e.g. images are only loaded when they are visible inside the browser viewport.
 
 ### Search engine
 * All content pages are indexed automatically.
@@ -87,12 +88,12 @@ Developer-centric open source framework with Web content management, search inde
 * Search control with real-time lookup.
 * Real-time search with built-in RESTful API.
 * Rich query language through the Query Parser; write complex rules or let the users make complex queries.
-* Hit highlighting
+* Hit highlighting.
 
 ### Storage
 * Uses the Azure Table Storage, so no SQL server or database setup is required.
 * Uses the Azure Blb Storage for images.
-* Temporary files are stored locally on each node
+* Temporary files are cached locally on each node for better performance.
 
 ### ASP.NET providers
 * Membership provider persists data in the Azure Table Storage.
@@ -128,6 +129,13 @@ Developer-centric open source framework with Web content management, search inde
   * Simple API makes it easy to send e-mails from your code.
   * Will wait for a set time and retry for a set amount of times if sending an e-mail fails.
   * Simple to setup with your own SMTP e-mail server.
+  
+### REST APIs
+* Ready to be used REST APIs.
+* Optional OAuth authentication scheme with consumer keys & secrets.
+* Easy to extend with your own REST API functionality.
+* Supports XML, JSON, and JSONP interchange formats.
+* Optimized settings made by experts for the greatest possible throughput.
 
 ### Diagnostics & logging to the Azure Table and Blob Storage
 * Centralized application and system logging with Web UI.
@@ -145,6 +153,7 @@ Developer-centric open source framework with Web content management, search inde
 * Easy to create forums with pre-made templates.
 * Social features like user voting and post favouring.
 * Administrate all forum comments from one central location UI.
+* Advanced BBCode formatting.
 
 ### Social features
 * Users can vote up & down in forums, these actions affect the user's *social score*.
@@ -198,5 +207,6 @@ Developer-centric open source framework with Web content management, search inde
 * Anti post hammering that automatically bans IP addresses for a limited preset amount of time.
 * Anti e-mail hammering that automatically bans IP addresses for a limited preset amount of time.
 * Centralized logging makes it easy to see security issues across all the cloud nodes in one UI.
+* Simple to ban users from the UI.
 
 ...and much more.
