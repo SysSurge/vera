@@ -37,17 +37,29 @@ namespace VeraWAF.WebPages.Cloud
         {
             List<WADWindowsEventLogEntity> allWinEventLog;
 
-            // Add filter, if any
-            var typeFilter = cmbTypeFilter.SelectedValue;
-            if (String.IsNullOrEmpty(typeFilter))
-                allWinEventLog = new List<WADWindowsEventLogEntity>(_datasource.GetWindowsEventLogEntries());
-            else
-                allWinEventLog = new List<WADWindowsEventLogEntity>(_datasource.GetWindowsEventLogEntries().Where(
-                        logItem => logItem.Level == int.Parse(typeFilter))
-                    );
+            try
+            {
+                // Add filter, if any
+                var typeFilter = cmbTypeFilter.SelectedValue;
+                if (String.IsNullOrEmpty(typeFilter))
+                    allWinEventLog = new List<WADWindowsEventLogEntity>(_datasource.GetWindowsEventLogEntries());
+                else
+                    allWinEventLog = new List<WADWindowsEventLogEntity>(_datasource.GetWindowsEventLogEntries().Where(
+                            logItem => logItem.Level == int.Parse(typeFilter))
+                        );
 
-            _totalNumberOfWinEventLogItems = allWinEventLog.Count;
-            _totalPages = ((_totalNumberOfWinEventLogItems - 1) / PageSize) + 1;
+                _totalNumberOfWinEventLogItems = allWinEventLog.Count;
+                _totalPages = ((_totalNumberOfWinEventLogItems - 1) / PageSize) + 1;
+
+            }
+            catch(Exception)
+            {
+                // Table is not created until the first event is logged
+                NavigationPanel.Visible = false;
+                _totalNumberOfWinEventLogItems = _totalPages = 0;
+                return;
+            }
+
 
             // Ensure that we do not navigate past the last page of users.
             if (_currentPage > _totalPages) {

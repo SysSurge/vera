@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceDefinition name="CloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
+<ServiceDefinition name="CloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
   <WebRole name="Www" vmsize="Small">
     <Sites>
       <Site name="Web">
@@ -12,8 +12,7 @@
       <InputEndpoint name="HttpIn" protocol="http" port="80" />
       <InternalEndpoint name="CloudCommand" protocol="tcp" />
     </Endpoints>
-    <Imports>
-    </Imports>
+    <Imports></Imports>
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />
     </ConfigurationSettings>
@@ -24,8 +23,7 @@
     </LocalResources>
   </WebRole>
   <WorkerRole name="MultiThreadedWorkerRole" vmsize="Small">
-    <Imports>
-    </Imports>
+    <Imports></Imports>
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />
     </ConfigurationSettings>
