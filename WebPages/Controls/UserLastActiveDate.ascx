@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserLastActiveDate.ascx.cs" Inherits="VeraWAF.WebPages.Controls.UserLastActiveDate" EnableViewState="false" %>
+<time ID="LastActivity" class="timeAgo" runat="server" datetime=""></time>

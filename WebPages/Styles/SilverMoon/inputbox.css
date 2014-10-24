@@ -1,0 +1,148 @@
+﻿/* Input box container */
+div.inputBox {
+    float: left;
+
+    position: relative;
+
+    width: 12.5em;
+    height: 2.6em;
+
+    top: 0.4em;
+
+    margin-top: -0.2em;
+    padding: 0 2.86em 0 0;
+
+    z-index: 3;
+}
+
+/* Clear icon is rotated 45 degrees */
+div.inputBox .rotate-45 {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Input box input control */
+input.inputBox, textarea.inputBox {
+    float: left;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    background-color: transparent;
+}
+
+input.inputBox {
+    text-align: center;
+}
+
+textarea.inputBox {
+    text-align: left;
+}
+
+/* Help text container */
+div.inputBox div#inputBoxBackground {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    background-color: #fff;
+    opacity: 0.5;
+
+    top: 0.143em;
+    left: 0;
+}
+
+/* Menu icon like save and clear */
+div.inputBox .toolIcon {
+    position: absolute;
+    margin-top: 0.1em;
+    cursor: pointer;
+}
+
+/* Save button */
+div.inputBox .saveIcon {
+    color: #000;
+
+    margin: 0.4em 0;
+    font-size: 1.3em;
+
+    right: -1.5em;
+}
+
+/* Clear button */
+div.inputBox .clearIcon {
+    display: none;
+
+    color: #000;
+
+    margin: 0.4em 0;
+    font-size: 1.3em;
+
+    right: -2.5em;
+}
+
+/* Help text */
+div.inputBox div#helpText {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    padding: 0.75em 0 0.65em 0.3em;
+    
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+    display: none;
+}
+
+/* Spinning icon while saving */
+div.inputBox div#savingIcon {
+    opacity: 0.5;
+    position: absolute;
+    font-size: 1.3em;
+    line-height: 1.3em;
+
+    right: -1.3em;
+    margin: 0.5em 0 0 0;
+
+    cursor: wait;
+    display: none;
+}
+
+/* Operation successful icon after saving */
+div.inputBox div#successIcon,
+div.inputBox div#failIcon {
+    position: absolute;
+    font-size: 1.3em;
+    line-height: 1.3em;
+
+    right: -1.3em;
+    margin: 0.5em 0 0 0;
+
+    display: none;
+}
+
+div.inputBox div#successIcon {
+    color: #56a441;
+}
+
+div.inputBox div#failIcon {
+    color: #aa0000;
+}

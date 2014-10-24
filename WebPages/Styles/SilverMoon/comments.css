@@ -1,0 +1,264 @@
+.commentSection .comment:after {
+    top: 3.786em !important;
+    float: left;   
+}
+
+.commentSection div.signInToComment {
+    text-align: center;
+}
+
+.commentSection .comment:after
+{
+    content: "";
+    
+    display: block;
+
+    width: 100%;    
+    height: 2.857em;
+
+    position: relative;
+
+    left: 0;
+    top: 2.857em;
+    
+    /* Fallback image */
+    background: transparent url(/Images/hr.png) no-repeat 0px -15px;
+ 
+    /* Firefox 3.6+ */
+    background-image: -moz-radial-gradient(center top, ellipse farthest-corner, rgba(0, 0, 0, 0.1), transparent 70%);
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, rgba(0, 0, 0, 0.1), transparent 70%);
+
+    /* Opera 11.10+ */
+    background-image: -o-radial-gradient(center top, ellipse farthest-corner, rgba(0, 0, 0, 0.1), transparent 70%);
+
+    /* IE 10+ */
+    background-image: -ms-radial-gradient(center top, ellipse farthest-corner, rgba(0, 0, 0, 0.1), transparent 70%);
+
+    /* CSS 3 */
+    background-image: radial-gradient(center top, ellipse farthest-corner, rgba(0, 0, 0, 0.1), transparent 70%);       
+}
+
+.commentSection .comment .signature {
+    float: left;
+    width: 100%;
+    border-top: 1px dashed #cccccc;
+    padding-top: 1em;
+    text-align: center;
+    color: #666;
+    font-size: 0.8em;
+    position: relative;
+    top: 1.429em;
+}
+
+.commentSection .userInfo {
+    float: left;
+    width: 11em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 1em 1em 0;
+}
+
+.userInfo p.score
+{
+    float: left;
+    font-size: 1.5em;
+}
+
+.userInfo var.score
+{
+    font-weight: bold;
+    color: #3399FE;
+}
+
+.userInfo span.joinedDate, .userInfo span.lastActiveDate, .userInfo span.userRoles
+{
+    float: left;
+    font-size: 0.8em;
+}
+
+.commentSection 
+{
+    width: 100%;
+    margin: auto;
+}
+
+.commentSection fieldset.commentsMenu {
+    min-height: 6em;
+    background-color: #F0F0F0;
+}
+
+.commentSection fieldset.commentsMenu menu{
+    height: 2em;
+}
+
+.commentSection .comment 
+{
+    float: left;
+
+    width: 60.714em;
+    
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    padding: 2em 1em 1em;
+    margin: 1em 0 1em 8.75em;
+
+    border: 1px solid #CCCCCC;
+    
+    -moz-box-shadow: 0 2px 0.4em rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 0.4em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px #FFFFFF inset, 0 2px 16px rgba(0, 0, 0, 0.1);    
+
+    /* Fallback non-cover color */
+    background-color: #ffffff;
+ 
+    /* Firefox 3.6+ */
+    background-image: -moz-radial-gradient(center center, ellipse farthest-corner, #ffffff, #F5F5F5 100%);
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background-image: -webkit-radial-gradient(center center, ellipse farthest-corner, #ffffff, #F5F5F5 100%);
+
+    /* Opera 11.10+ */
+    background-image: -o-radial-gradient(center center, ellipse farthest-corner, #ffffff, #F5F5F5 100%);
+
+    /* IE 10+ */
+    background-image: -ms-radial-gradient(center center, ellipse farthest-corner, #ffffff, #F5F5F5 100%);
+
+    /* CSS 3 */
+    background-image: radial-gradient(center center, ellipse farthest-corner, #ffffff, #F5F5F5 100%);     
+}
+
+.commentSection .commentsMenu textarea 
+{
+    width: 51.429em;
+    height: 10em;
+}
+
+.commentSection .commentsMenu input {
+    float: left;
+}
+
+.commentSection .commentsMenu a.bbCode {
+    float: right;
+    cursor: help;
+}
+
+.commentSection .comment a.userPortrait,
+.commentSection .commentsMenu div.currentUserPortrait
+{
+    float: left;
+    margin: 0 1em 0 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 6.429em;
+    height: 8.571em;
+}
+
+fieldset.contactUser {
+    display: block !important;
+    width: 30em !important;
+    background-color: #F0F0F0;
+    margin: auto;
+}
+
+.contactUser .fromUser{
+    margin-bottom: 2em;
+}
+
+.contactUser input
+{
+    float: right;
+    margin: 0;
+}
+
+.commentSection .comment .commentText 
+{
+    float: left;
+    margin: 0;
+}
+
+.commentSection .comment .commentFooter {
+    float: left;
+
+    width: 100%;
+    height: 1em;
+
+    color: #666666;    
+    font-size: 0.9em;
+
+    padding-bottom: 4em;
+    text-align: left;
+}
+
+.commentSection .comment figure
+{
+    padding: 0;
+    margin: 0;
+}
+
+.commentSection .comment article {
+    text-align: left;
+    padding: 1em;
+}
+
+.commentSection .comment a.commentLink {
+    float: right;
+}
+
+.commentSection .comment a.commentLink i {
+    color: #000000;
+    text-decoration: none;
+    padding-right: 0.5em;
+}
+
+
+.contactUser div.currentUserPortrait,
+.page3 .content .userInfo a.userPortrait
+{
+    float: left;
+    margin: 0 1em 0 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 6.429em;
+    height: 8.571em;
+}
+
+.userPortrait64x64
+{
+    width: 4.571em;
+    height: 4.571em;
+    
+    margin: 0.1em;
+    margin: 0.1em;
+    border: 1px solid #000000;
+
+    border-color: #c9c9c9 #bbbbbb #aaaaaa;
+    border-style: solid;
+    border-width: 1px;
+    
+    -moz-box-shadow: 0 0.1em 1.143em rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0.1em 1.143em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.1em 0.1em #FFFFFF inset, 0 0.1em 1.143em rgba(0, 0, 0, 0.1);
+    
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;    
+}
+
+.page3 .content .userInfo {
+    float: left;
+    width: 17.143em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 1em 1em 0;
+}
+
+.page3 .content .userInfo .signature {
+    float: left;
+    font-size: 0.9em;
+}

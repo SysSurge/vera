@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sub2.Master.cs" Inherits="VeraWAF.WebPages.Sub2" %>
+<%@ Import Namespace="System.Configuration" %>
+<%@ Register src="~/Controls/Footer.ascx" tagname="Footer" tagprefix="uc1" %>
+<%@ Register src="~/Controls/UserRoleContextMenu.ascx" tagname="UserRoleContextMenu" tagprefix="uc1" %>
+<%@ Register src="~/Controls/DropdownMenu.ascx" tagname="DropdownMenu" tagprefix="uc1" %>
+<%@ Register src="~/Controls/SiteTracker.ascx" tagname="SiteTracker" tagprefix="uc1" %>
+<%@ Register src="~/Controls/JailImage.ascx" tagname="JailImage" tagprefix="uc1" %>
+<%@ Register TagPrefix="uc1" TagName="HorizontalMenu" Src="~/Controls/HorizontalMenu.ascx" %><!DOCTYPE html> 
+<html version="HTML+RDFa 1.1" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sc="http://schema.org/" xmlns:gr="http://purl.org/goodrelations/v1#">
+<head profile="http://www.w3.org/1999/xhtml/vocab" runat="server">
+    
+    <CompressScripts CompressedFile="sub2.min.js" runat="server">
+        jquery-1.11.1.js
+        jail.0.9.5.min.js
+        jquery.timers-1.2.js
+        bll.datetime.js
+        bll.timeago.js
+        jquery.preventDoubleSubmission.js
+        dal.interfaces.js
+        dal.interchange.js
+        pl.searchBox.js
+        pl.inputBox.js
+        bll.email.js
+        pl.email.js
+        pl.submit.js
+        pl.pageLoad.js
+    </CompressScripts>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css" />
+    <link href="/Styles/Shared/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <CompressStyles CompressedFile="sub2.min.css" runat="server">
+        base.css
+        devices.css
+        form.css
+        email.css
+        submit.css
+        tools.css
+        logo.css
+        fieldset.css
+        site.css
+        page.css
+        level1menu.css
+        level2menu.css
+        level3menu.css
+        level4menu.css
+        sociallinks.css
+        signin.css
+        comments.css
+        voting.css
+        footer.css
+        bbcode.css
+        share.css
+        rssicon.css
+        searchbox.css
+        inputbox.css
+        marks.css
+    </CompressStyles>
+
+    <asp:ContentPlaceHolder ID="HeadContent" ViewStateMode="Disabled" runat="server"></asp:ContentPlaceHolder>
+
+    <uc1:SiteTracker runat="server" ViewStateMode="Disabled"></uc1:SiteTracker>
+</head>
+<body>
+    <a id="top"></a>    
+    <form runat="server">
+
+       <aside class="loginDisplay">
+            <div class="loginDisplayNav">
+                <a href="/"><uc1:JailImage ID="logo" runat="server" src="/Images/Logo_77x77.png" css="logo" alt="" width="77" height="77" /></a>
+                <div class="loginNav">
+                    <uc1:UserRoleContextMenu runat="server"></uc1:UserRoleContextMenu>
+                </div>
+            </div>
+        </aside>
+
+        <uc1:DropdownMenu ID="DropdownMenu" runat="server"></uc1:DropdownMenu>
+
+        <div class="page2 clear">
+            <div id="header">
+                <uc1:HorizontalMenu ID="Level2Menu" ParentIndex="2" runat="server"></uc1:HorizontalMenu>
+            </div>
+        </div>
+
+        <main>
+            <div class="page3 clear">
+                <div class="main clear">
+                    <article>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                    </article>
+                    <div class="clear">&nbsp;</div>
+                </div>
+            </div>
+        </main>
+
+        <div class="footer clear">
+            <div class="footerSectionContainer">
+                <uc1:Footer runat="server" ViewStateMode="Disabled"></uc1:Footer>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

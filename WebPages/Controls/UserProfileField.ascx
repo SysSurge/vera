@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserProfileField.ascx.cs" Inherits="VeraWAF.WebPages.Controls.UserProfileField" EnableViewState="false" %>
+<asp:Literal ID="litMarkup" runat="server"></asp:Literal>

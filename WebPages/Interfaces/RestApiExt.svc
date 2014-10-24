@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="VeraWAF.WebPages.Interfaces.RestApiExt" CodeBehind="RestApiExt.svc.cs" %>

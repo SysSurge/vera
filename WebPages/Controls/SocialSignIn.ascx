@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SocialSignIn.ascx.cs" Inherits="VeraWAF.WebPages.Controls.SocialSignIn" EnableViewState="false" %>
+<asp:Literal ID="litMarkup" runat="server"></asp:Literal>

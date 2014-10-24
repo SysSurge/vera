@@ -1,0 +1,64 @@
+div.favoriteContainer {
+    float: left;
+
+    width: 4.643em;
+    height: 6.071em;
+    
+    text-align: center !important;
+
+    padding: 0.3em 0 0 0;
+    margin: 0 1em 1em 0;
+
+    text-align: center;
+
+    border: 1px solid #CCCCCC;
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    background-color: #ffffff;
+
+    -moz-box-shadow: 0 0.1em 1.143em rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0.1em 1.143em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.1em 0.1em #FFFFFF inset, 0 0.1em 1.143em rgba(0, 0, 0, 0.1);
+}
+
+div.favoriteContainer input.favorite {
+    font-family: Arial, sans-serif;
+}
+
+div.favoriteContainer input.favorite 
+{
+    color: #3399FE;
+    font-size: 3em;
+    text-align: center !important;
+    
+    cursor: pointer;
+    
+	width: 100%;
+	height: 1.1em;
+
+	line-height: 1.1em;
+    vertical-align: middle;
+
+    border: none;
+	
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;    	
+	
+    background: none;
+
+    margin: 0 auto;    
+    padding: 0;
+
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+div.favoriteContainer input.favorite:hover {
+    background: none;
+}
+

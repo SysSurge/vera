@@ -1,0 +1,172 @@
+.loginDisplayNav {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5.5em;
+}
+
+.loginDisplay
+{
+    display: block;
+    background-color: #FFFFFF;
+    height: 5.5em;
+    padding-top: 1em;
+
+    /* Fallback non-cover color */
+    background-color: #FFFFFF;
+
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D9D9D9), to(#FFFFFF));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background: -webkit-gradient(linear, center top, center bottom, from(#D9D9D9), to(#FFFFFF));
+    
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(center top , #D9D9D9, #FFFFFF) repeat scroll 0 0 transparent;
+    
+    /* IE 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9D9D9', endColorstr='#FFFFFF');
+    
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #D9D9D9, #FFFFFF);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #D9D9D9, #FFFFFF);        
+}
+
+.loginNav a {
+    color: #000000;
+    margin: 0 0.5em;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.loginNav a:hover {
+    color: #2f98fe;
+
+    /* Smooth transitions*/
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.loginNav span {
+    margin-left: 0,3571em;
+    font-size: 0.9286em;
+    font-style: italic;
+}
+
+.loginNav {
+    float: right;
+    padding-top: 1em;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.loginDisplayNav > a {
+    float: left;
+}
+
+.loginDisplayNav a.footerLogo {
+    margin-top: 1.0em;
+}
+
+fieldset.login {
+    background-color: #F0F0F0;
+}
+
+fieldset.login label {
+    display: block;
+}
+
+a.topLoginButton {
+    float: right;
+}
+
+a.topRegisterButton {
+    float: right;
+}
+
+a.topLoginButton, a.topRegisterButton {
+    display: block;    
+    
+    padding: 0.65em 1.5em;
+    margin: 0 0 0 1.2em;
+
+    border: 1px solid #c8c8c8;
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+}
+
+a.topLoginButton:hover, a.topRegisterButton:hover {
+    border-color: #b8b8b8;
+}
+
+@media (max-width: 750px) {
+    .loginDisplayNav:before {
+		display:none;
+	}
+
+    .loginDisplayNav {
+		position: static;
+        padding: 2.1429em 2.1429em;
+    }
+}
+
+.loginDisplay {
+    /* Fallback/image non-cover color */
+    background: #fcfcff;
+    
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcff), to(#fafafa));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background: -webkit-gradient(linear, center top, center bottom, from(#fcfcff), to(#fafafa));
+    
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(center top , #fcfcff, #fafafa) repeat scroll 0 0 transparent;
+        
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #fcfcff, #fafafa);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #fcfcff, #fafafa);        
+}
+
+.loginDisplayNav img.logo {
+    font-size: 0.6em;
+    width: 5.5em;
+    height: 5.5em;
+    margin-top: 0.8em;
+}
+
+/* User portrait*/
+.loginNav figure {
+    width: 2.6em;
+    height: 2.6em;
+    float: left;
+}
+
+/* User portrait*/
+.loginNav figure img {
+    width: 2.5em;
+    height: 2.5em;
+
+    border: 0.1em solid #000;
+    border-radius: 0.5em;
+}
+
+/* Right part of the perzonalized menu */
+.loginNav .perzonalizedMenuRight {
+    float: right;
+}
+
+/* Used for higlighting icons that indicate errors or danger */
+.text-danger {
+    color: #aa0000;
+}

@@ -1,0 +1,25 @@
+table.blueHeader {
+    margin-bottom: 3em;
+}
+
+table.blueHeader tr:first-child > td:first-child {
+    float: left;
+    border: 1px solid #666666; 
+    border-bottom: none; 
+    color: #ffffff; 
+    background-color:#3399FE; 
+}
+
+table.blueHeader td {
+    background-color: #ffffff; 
+
+    border: 1px solid #666666;
+
+    -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px #FFFFFF inset, 0 2px 16px rgba(0, 0, 0, 0.1);   
+}
+
+.page3 .main article table.blueHeader article {
+    text-align: left;
+}

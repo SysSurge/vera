@@ -1,0 +1,41 @@
+.bold {
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.center {
+    margin: 0 auto;    
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.rounded {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.veryRounded {
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.shadow {
+    -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px #FFFFFF inset, 0 2px 16px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,90 @@
+﻿/* File explorer wrapper */
+section.fileexplorer {
+    display: inline-block;
+}
+
+/* File explorer fieldset */
+fieldset.fileexplorer {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 30%;
+    z-index: 1000;
+    box-shadow: 0 0 2em #888;
+}
+
+/* Gray out the background while the file explorer dialog is open */
+div.fileexplorerBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    content: "";
+    z-index: 999;
+    display: none;
+}
+
+/* File explorer icon and path container */
+div.fileexplorer {
+    width: 35em;
+    height: 20em;
+
+    background: #fff;
+    border: 1px solid black;
+    overflow: auto;
+
+    clear: both;
+}
+
+/* File explorer icon and path container */
+div.fileexplorer .selectedNode, section.fileexplorer .selectedNode
+{
+    color: #fff;
+    background: #56a441;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+section.fileexplorer label
+{
+    float: none;
+    padding: 0.8em 1em 0 0;
+}
+
+section.aclRule {
+    border-bottom: 1px solid black;
+}
+
+section.fileexplorer section.aclRule label
+{
+    float: none;
+}
+
+/* Path textbox inside the file explorer */
+section.fileexplorer input[type=text] 
+{
+    float: left;
+    width: 22em;
+    margin-bottom: 1em;
+}
+
+section.fileexplorer input[type=submit]
+{
+    float: left;
+    margin: -0.1em 1em;  
+}
+
+/* Path textbox inside the file explorer */
+section.fileexplorer input[type=text].result
+{
+    width: 40em;
+}
+
+.fileexplorerContainer {
+    border: 1px solid black;
+    background: #fff;
+    padding: 1em;
+    margin: 1em;
+}

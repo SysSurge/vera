@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="CloudService1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="WebPages">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="DiagnosticsConnectionString" value="DefaultEndpointsProtocol=https;AccountName=azureproviders1;AccountKey=Ye4/hSJQsBKa5q3mg4iuQwYcvO0qnr2HAdlTGUMvyOrNUVFhj7GRCBsw0k2GutIIOSZtIBN5o9KCZ44a12cwlw==" />
+      <!--Local development environment configuration settings-->
+      <Setting name="AccountName" value="Oratorius" />
+      <Setting name="AccountSharedKey" value="Fby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==" />
+      <Setting name="TableStorageEndpoint" value="http://127.0.0.1:10002/" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=azureproviders1;AccountKey=Ye4/hSJQsBKa5q3mg4iuQwYcvO0qnr2HAdlTGUMvyOrNUVFhj7GRCBsw0k2GutIIOSZtIBN5o9KCZ44a12cwlw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="Kith.me" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEFpSuWcBmhK6SEVDZAckxN8wDQYJKoZIhvcNAQEBBQAEggEAVL+yJ1LZaq2MMl90GxZYXegPNVSaj2o5sw+zm+rfYoLlP+IOtFI8TTWwGMHR+1XYQ4Ok1DhuBU63QuQ4pe/VCo6xlsgX6MTi/Ar6WWMyNRwnEx1uRDId38DK4cxIfqIIgbnuaDpH2H7zSbP5hP5aWHUgQ3r0NTIHsXTLo45KSPQry0EYidDYMMIU3DAN/9cAzXxXUvml07uEm2whMcy6rLi9EIVwuhpfNozTPH3xrfkdoZkWJsulnrjiwYWBav3bAapQ6friAFNkldep7QkHqMNFYYIYbZLVtCLIo0zJoAS6WX0HWQL0ZO/rdVG7TY68ymDUneaQ2W4XR4HVa8v7GDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECF2rPMLqVnwFgBC+8hcIc22XCIERvdyr5PN6" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2012-10-01T23:59:59.0000000+02:00" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="F24597F4B60945608441C15968E958931C9A8CDE" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="MultiThreadedWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=azureproviders1;AccountKey=Ye4/hSJQsBKa5q3mg4iuQwYcvO0qnr2HAdlTGUMvyOrNUVFhj7GRCBsw0k2GutIIOSZtIBN5o9KCZ44a12cwlw==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=azureproviders1;AccountKey=Ye4/hSJQsBKa5q3mg4iuQwYcvO0qnr2HAdlTGUMvyOrNUVFhj7GRCBsw0k2GutIIOSZtIBN5o9KCZ44a12cwlw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="Kith.me" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEFpSuWcBmhK6SEVDZAckxN8wDQYJKoZIhvcNAQEBBQAEggEAVL+yJ1LZaq2MMl90GxZYXegPNVSaj2o5sw+zm+rfYoLlP+IOtFI8TTWwGMHR+1XYQ4Ok1DhuBU63QuQ4pe/VCo6xlsgX6MTi/Ar6WWMyNRwnEx1uRDId38DK4cxIfqIIgbnuaDpH2H7zSbP5hP5aWHUgQ3r0NTIHsXTLo45KSPQry0EYidDYMMIU3DAN/9cAzXxXUvml07uEm2whMcy6rLi9EIVwuhpfNozTPH3xrfkdoZkWJsulnrjiwYWBav3bAapQ6friAFNkldep7QkHqMNFYYIYbZLVtCLIo0zJoAS6WX0HWQL0ZO/rdVG7TY68ymDUneaQ2W4XR4HVa8v7GDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECF2rPMLqVnwFgBC+8hcIc22XCIERvdyr5PN6" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2012-10-01T23:59:59.0000000+02:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="F24597F4B60945608441C15968E958931C9A8CDE" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

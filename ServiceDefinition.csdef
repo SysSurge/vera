@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="CloudService1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
+  <WebRole name="Www" vmsize="ExtraSmall">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="HttpIn" endpointName="HttpIn" />
+          <!-- Uncomment to add HTTPS support -->
+          <!--<Binding name="Endpoint1" endpointName="HttpsIn" />-->
+        </Bindings>
+      </Site>
+    </Sites>
+    <ConfigurationSettings>
+      <Setting name="DiagnosticsConnectionString" />
+      <Setting name="AccountName" />
+      <Setting name="AccountSharedKey" />
+      <Setting name="TableStorageEndpoint" />
+      <Setting name="DataConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="HttpIn" protocol="http" port="88" />
+      <!-- Add your own PFX certificate below -->
+      <!-- <InputEndpoint name="HttpsIn" protocol="https" port="443" certificate="www_example_com_pfx" /> -->
+      <InternalEndpoint name="Endpoint1" protocol="tcp" />
+    </Endpoints>
+    <LocalResources>
+      <LocalStorage name="LuceneIndex" cleanOnRoleRecycle="false" sizeInMB="20" />
+      <LocalStorage name="VirtualPages" cleanOnRoleRecycle="false" sizeInMB="1" />
+      <LocalStorage name="VirtualForumPages" cleanOnRoleRecycle="false" sizeInMB="1" />
+    </LocalResources>
+    <Imports>
+    </Imports>
+    <Certificates>
+      <!-- Add your own PFX certificate below -->
+      <!--<Certificate name="www_example_com_pfx" storeLocation="LocalMachine" storeName="My" />-->
+    </Certificates>
+    <Startup>
+      <Task commandLine="Batch\RoleStartup.cmd" executionContext="elevated" />
+    </Startup>
+  </WebRole>
+  <WorkerRole name="MultiThreadedWorkerRole" vmsize="ExtraSmall">
+    <Imports>
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="DiagnosticsConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole>
+</ServiceDefinition>

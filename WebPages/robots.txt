@@ -1,0 +1,21 @@
+# Webmasters: Always save this file as Western European (ISO) - Codepage 28591 as validators will fail otherwise
+
+# Add rules for all kinds of bots
+User-agent: *
+Disallow: /Account/ActivateAccount.aspx
+Disallow: /AccessControl/
+Disallow: /ClientBin/
+Disallow: /Cloud/
+Disallow: /Controls/
+Disallow: /CMS/
+Disallow: /ErrorPages/
+Disallow: /Interfaces/
+Disallow: /Syndication.aspx
+Disallow: /Templates/
+Request-rate: 5/1m 1300-1659		# 8:00 am to noon EST (GMT -4 hours)
+Request-rate: 2/1m 1700-0459		# noon to 11:59 pm EST (GMT -4 hours)
+Request-rate: 10/1m  0500-1259		# midnight to 7:59 am EST (GMT -4 hours)
+
+# Change this to your domain, relative paths not allowed unfortunately
+Sitemap: http://www.example.com/sitemap.xml	
+Comment: Please continuously update yourselves on our website terms & conditions as seen at http://www.example.com/Terms.aspx 

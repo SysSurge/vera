@@ -1,0 +1,30 @@
+/* Board / forum */
+.boardIndexMenu tr > td
+{
+    border: 1px solid #666;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    background-color: #F0F0F0;
+}
+
+.boardIndex table {
+    width: 100%
+}
+
+.page3 .boardIndex .content .statistics {
+    float: left;
+    background-color: #fff;
+    padding: 0.2em 0.5em;
+    margin-right: 1em;
+}
+
+.page3 .boardIndex .content h1 {
+    font-size: 1.2em !important;
+}
+
+.forumPage .pageFooter small {
+    width: 100%;
+}

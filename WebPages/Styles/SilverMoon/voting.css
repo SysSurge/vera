@@ -1,0 +1,73 @@
+.voteContainer {
+    float: left;
+    margin: 0.2em 1em 1em 0;
+    text-align: center;
+    width: 39px;
+}
+
+input.upArrow {
+    cursor: pointer;
+    
+	width: 39px;
+	height: 20px;
+
+    border: none;
+	    
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    background: transparent url(/Images/upArrow.gif) no-repeat;
+	
+    margin: 0;
+    padding: 0;
+    
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    
+}
+
+input.upArrow:hover {
+    background: transparent url(/Images/upArrow.gif) no-repeat;
+}
+
+input.downArrow {
+    cursor: pointer;
+    
+	width: 39px;
+	height: 20px;
+
+    border: none;
+	
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;    	
+	
+    background: transparent url(/Images/downArrow.gif) no-repeat;
+
+    margin: 0;
+    padding: 0;
+
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input.downArrow:hover {
+    background: transparent url(/Images/downArrow.gif) no-repeat;
+}
+
+.voteCount {
+    font-size: 20pt;
+    height: 43px;
+    text-align: center;
+}
+
+.positive {
+    color: #33cc33;
+}
+
+.negative {
+    color: #FE3333;
+}

@@ -1,0 +1,271 @@
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+input::placeholder {
+	color: #c8c8c8;
+}
+
+input::-moz-focus-inner {
+	border:0;
+	padding:0
+}
+
+/* IE 10 fix */
+input[type="text"]::-ms-clear,
+input[type="email"]::-ms-clear {
+    display: none;
+}
+
+textarea[readonly="readonly"],
+input[readonly="readonly"],
+textarea[readonly="readonly"]:focus,
+input[readonly="readonly"]:focus
+{
+    background-color: #ddd;
+    color: #777;
+}
+
+input[type="checkbox"] {
+    font-family: 'Open Sans', Arial, sans-serif;
+    width: 2em;
+    height: 2em;
+}
+
+input[type="file"] {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    height: 3em;
+}
+
+input[type="text"], input[type="email"], 
+input[type="password"], textarea {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.1em;
+
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+
+    outline-width: 0;
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    -webkit-box-shadow: 1px 2px 4px  #cccccc inset;
+    -moz-box-shadow: 1px 2px 4px  #cccccc inset;
+    box-shadow: 1px 2px 4px  #cccccc inset;
+
+    text-indent: 5px;
+    height: 23px;
+    font-size: 1em;
+    display: block;
+
+    padding: 1em;
+}
+
+textarea {
+    height: auto;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, 
+input[type="password"]:focus, textarea:focus { 
+    outline: none;
+    background-color: #f0f8ff;
+
+    /* Smooth transitions*/
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+textarea {
+    margin-top: 0px;
+}
+
+input[type="text"][disabled], input[type="email"][disabled],
+input[type="password"][disabled], textarea[disabled] {
+    background-color: #aaaaaa;
+    color: #666666;
+}
+
+.hideDisabled input[type="text"][disabled], .hideDisabled input[type="email"][disabled], 
+.hideDisabled input[type="password"][disabled], .hideDisabled textarea[disabled] {
+    display: none;
+}
+
+.buttonFace,
+input[type=button], input[type=submit] {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #56a441;
+
+    text-align: center;
+    vertical-align: middle;
+
+    width: auto;
+    height: auto;
+
+    margin: 1em 0 0 0;
+    padding: 1em 1.5em;
+
+    border: 1px solid #c8c8c8;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+}
+
+.buttonFace:hover,
+input[type=button]:hover, input[type=submit]:hover {
+    background-color: #63bd4c;
+
+    /* Smooth transitions*/
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+input[type="button"][disabled], input[type="submit"][disabled] {
+    color: #bbbbbb;
+    text-shadow: none;
+}
+
+input[type="button"][disabled]:hover, input[type="submit"][disabled]:hover {
+    /* Fallback/image non-cover color */
+    background: #e0e0e0 none;
+    
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f0f0f0), to(#d9d9d9));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background: -webkit-gradient(linear, center top, center bottom, from(#f0f0f0), to(#d9d9d9));
+    
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(center top , #f0f0f0, #d9d9d9) repeat scroll 0 0 transparent;
+        
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #f0f0f0, #d9d9d9);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #f0f0f0, #d9d9d9);  
+
+    /* Smooth transitions*/
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+select {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.1em;
+
+    padding: 0.3em;
+    
+    border: 1px solid #ccc;
+    
+    -webkit-border-radius: 0.4em 0 0 0.4em;
+    -moz-border-radius: 0.4em 0 0 0.4em;    
+    border-radius: 0.4em 0 0 0.4em;
+
+    -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px #FFFFFF inset, 0 2px 16px rgba(0, 0, 0, 0.1);
+
+    text-shadow: 1px 1px 0px #e9e9e9;
+
+    /* Fallback non-cover color */
+    background-color: #ffffff;
+
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#f0f0f0));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#f0f0f0));
+    
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(center top , #ffffff, #f0f0f0) repeat scroll 0 0 transparent;
+    
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #ffffff, #f0f0f0);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #ffffff, #f0f0f0);   
+}
+
+/* Rounded buttom */
+.buttonFace {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 1em;
+    margin: 1em;
+
+    border: 1px solid #c8c8c8;
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+}
+
+.failureNotification ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#MainContent_NavigationPanel input
+{
+    float: left;
+}
+
+#MainContent_NavigationPanel input[type="submit"].navigationPanel
+{
+    float: left;
+    display: inherit;
+    margin: 0 0 0 1em;
+}
+
+/* Form label */
+label {
+    color: #008B8B;
+    padding: 0 1em;
+}
+
+/* Defines an area that contains notifications after some form action */
+.infoNotification, .failureNotification {
+    font-size: 1.2em;
+}
+
+/* Defines an area that contains information messages after some form action */
+.infoNotification {
+    color: green;
+}
+
+/* Defines an area that contains error messages after some form action */
+.failureNotification {
+    color: red;
+}
+
+/* Defines an unordered list that contains notifications after some form action */
+ul.infoNotification, ul.failureNotification {
+    margin: 1em auto;
+}
+
+/* Center all input text fields inside fieldset elements */
+fieldset input[type="text"] {
+    margin: 0 auto;
+}
+
+/* Max width input text fields inside fieldset elements */
+fieldset.fill input[type="text"] {
+    width: 98%;
+}

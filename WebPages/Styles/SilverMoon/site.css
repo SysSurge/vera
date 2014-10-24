@@ -1,0 +1,85 @@
+time.timeAgo 
+{
+    cursor: help;
+    text-decoration: underline;
+    text-decoration: dotted;
+}
+
+h2.error {
+    color: #fe9933;
+    font-variant: normal;
+    font-weight: normal;
+    padding-bottom: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2 {
+    margin-top: 0px;
+}
+
+.leftCol {
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+input#MainContent_butSave {
+    font-weight: bold;
+}
+
+.hr {
+    width: 100%;
+    height: 30px;
+    
+    margin: 3em 0;    
+    
+    /* Fallback image */
+    background: transparent url(/Images/hr.png) no-repeat;
+ 
+    /* Firefox 3.6+ */
+    background-image: -moz-radial-gradient(center center, ellipse farthest-corner, rgba(0, 0, 0, 0.15), transparent 70%);
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background-image: -webkit-radial-gradient(center center, ellipse farthest-corner, rgba(0, 0, 0, 0.15), transparent 70%);
+
+    /* Opera 11.10+ */
+    background-image: -o-radial-gradient(center center, ellipse farthest-corner, rgba(0, 0, 0, 0.15), transparent 70%);
+
+    /* IE 10+ */
+    background-image: -ms-radial-gradient(center center, ellipse farthest-corner, rgba(0, 0, 0, 0.15), transparent 70%);
+
+    /* CSS 3 */
+    background-image: radial-gradient(center center, ellipse farthest-corner, rgba(0, 0, 0, 0.15), transparent 70%);   
+}
+
+.title {
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.bottom {
+    background-color: #C9D9FF;
+}
+
+img.right {
+    float: right;
+    width: 22.857em;
+    height: 16.929em;
+    margin: -2.5em -0.714em 0 0;
+}
+
+.maintext img, 
+.maintext2 img,
+.maintext table, 
+.maintext2 table {
+    max-width: 1500px;
+}
+
+img.leftmost, .leftmost img {
+    max-width: 1500px !important;
+}
+

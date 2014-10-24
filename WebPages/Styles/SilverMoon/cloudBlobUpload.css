@@ -1,0 +1,57 @@
+﻿#silverlightControlHost {
+    margin: auto;
+}
+
+#silverlightControlHost object {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+/* Wrapepr around a file in the file list */
+#FileList .file {
+    clear: both;
+    float: left;
+    width: 30em;
+    height: 3em;
+    margin: 1em;
+    padding: 0;
+}
+
+#FileList #emptyList {
+}
+
+#FileList .file .innerRegion {
+    float: left;
+    position: absolute;
+    width: 29em;
+}
+
+#FileList .file .innerRegion .progress {
+    float: left;
+    height: 1em;
+    width: 100%;
+    background: #fff;
+}
+
+#FileList .file .innerRegion .progress div {
+    float: left;
+    height: 1em;
+    background: #00ff21;
+}
+
+#FileList .file .innerRegion .bytesUploaded {
+    float: left;
+    position: relative;
+    left: -20em;
+    width: 20em;
+    text-align: center;
+}
+
+#FileList .stop {
+    float: left;
+    width: 2em;
+    height: 2em;
+    z-index: 1;
+    margin-top: -5.6em;
+}

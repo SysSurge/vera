@@ -1,0 +1,243 @@
+div.searchBox {
+    float: left;
+
+    position: absolute;
+
+    width: 12.5em;
+    height: 2.6em;
+
+    right: 4.4em;
+    top: 0.4em;
+
+    margin-top: -0.2em;
+    padding: 0 2.86em 0 0;
+
+    z-index: 3;
+}
+
+div.searchBox .rotate-45 {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+input.searchBox {
+    float: left;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-align: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    background-color: transparent;
+}
+
+div.searchBox div#searchBoxBackground {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    background-color: #fff;
+    opacity: 0.5;
+
+    top: 0.143em;
+    left: 0;
+}
+
+div.searchBox .searchIcon {
+    position: absolute;
+    margin-top: 0.1em;
+    cursor: pointer;
+}
+
+div.searchBox div#searchIcon {
+    color: #aaa;
+
+    padding: 0.5em 0.6em;
+    font-size: 1.3em;
+}
+
+div.searchBox div#clearIcon {
+    display: none;
+
+    padding: 0.5em 0.6em;
+    font-size: 1.3em;
+
+    right: 0;
+
+    opacity: 0;
+}
+
+div.searchBox div#loadingIcon {
+    color: #aaa;
+
+    font-size: 1.3em;
+    line-height: 1.3em;
+
+    right: 0;
+    padding: 0.32em 0.5em;
+
+    cursor: wait;
+    display: none;
+}
+
+div.searchBox div#helpText {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    padding: 0.75em 0 0.65em 0.3em;
+    
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+    display: none;
+}
+
+div.searchBox input.searchBoxSubmit {
+    float: left;
+    position: absolute;
+    left: -3.214em;
+    top: 0.214em;
+    display: block;
+
+    width: 4.786em;
+    height: 20.071em;
+
+    -webkit-border-radius: 1.143em 0 0 1.143em;
+    -moz-border-radius: 1.143em 0 0 1.143em;
+    border-radius: 1.143em 0 0 1.143em;
+
+    padding-right: 0.714em;
+}
+
+div#searchResult {
+    width: 18.857em;
+    height: auto;
+
+    position: absolute;
+
+    left: 0;
+    top: 2.8em;
+
+    display: none;
+
+    overflow: hidden;
+    text-overflow: clip;
+    
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #D9D9D9 #CCCCCC #BBBBBB;
+    border-left: 0.071em solid #CCCCCC;
+
+    -webkit-border-radius: 0.286em 0.286em 1.143em 1.143em;
+    -moz-border-radius: 0.286em 0.286em 1.143em 1.143em;
+    border-radius: 0.286em 0.286em 1.143em 1.143em;
+
+    border-right: 0.071em solid #CCCCCC;
+    border-style: solid;
+    border-width: 0.071em;
+
+    padding: 1em;
+
+    -moz-box-shadow: 0 0.143em 1.143em rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0.143em 1.143em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.071em 0.071em #FFFFFF inset, 0 0.143em 1.143em rgba(0, 0, 0, 0.1);
+
+    /* Fallback non-cover color */
+    background-color: #fff;
+
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f0f0f0));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#f0f0f0));
+    
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(center top , #fff, #f0f0f0) repeat scroll 0 0 transparent;
+    
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #fff, #f0f0f0);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #fff, #f0f0f0);   
+    
+}
+
+div#searchResult .searchResultArticle h1 {
+    font-size: 1em;
+}
+
+div#searchResult .searchResultArticle img {
+    width: 3.429em;
+    height: 3.429em;
+    border: none;
+    float: left;
+    padding: 0.286em 0.286em 0.286em 0;
+    
+    -webkit-border-radius: 0.429em;
+    -moz-border-radius: 0.429em;
+    border-radius: 0.429em;     
+}
+
+div#searchResult .searchResultArticle a {
+    color: #000;
+    text-decoration: none;
+}
+
+div#searchResult h1.searchResultHitsText  {
+    font-size: 1em;
+    color: #3399fe;
+    font-weight: bold;
+    height: 2em;
+}
+
+div#searchResult .searchResultArticle {
+    clear: both;
+}
+
+div#searchResult .searchResultArticle .searchResultText {
+    margin-bottom: 1em;
+    text-align: justify;
+    line-height: 1.1em;
+}
+
+div#searchResult .searchResultArticle .searchResultText a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+div#searchResult .searchResultFooter {
+    float: left;
+    width: 100%;
+    height: 1.6em;
+    font-size: 0.9em;
+}
+
+div#searchResult .searchResultFooter a#moreQueryResults {
+    float: left;
+}
+
+div#searchResult .searchResultFooter a.queryHelp {
+    float: right;
+    cursor: help;
+}

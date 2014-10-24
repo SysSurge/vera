@@ -7,17 +7,12 @@ Homepage: [VeraWAF project homepage](http://www.verawaf.com/)
 ## Kickstarter open source framework for Microsoft(R) Azure(TM) Web Applications.
 Developer-centric open source framework with Web content management, search indexing, user managent, and much more. Have your Azure web app ready in minutes and save months or even years of work. Smart caching saves you up to 90% of your storage transaction costs.
 
->"Vera is great for programmers who wants to quickly start building Azure Web Applications without having to develop fundamental functionality like user and content management from scratch. Vera saves you months or more of research & development, and lets you start developing your core business functionality straight away."* - Developer
+>"Vera is great for programmers who wants to quickly start building Azure Web Applications without having to develop fundamental functionality like user and content management from scratch. Vera saves you months or more of research & development, and lets you start developing on your core business functionality right away."* - Developer
 
 ### Reduce development time
 * Ready to be used fundamental functionality like access control, social sign-in, indexed search, Web Content Management, forums, newsletters, RSS feeds, and much more.
 * Utilize existing templates or create your own.
 * Shorten development time with Vera fundamentals.
-
-### Web Content Managment
-* Access control for all Web Content Management roles and users.
-* Simple user interfaces to manage pages, users, roles, and the Web Application.
-* Adaptable with dynamic menu items, styling, page templates, and user control templates.
 
 ### Quick & easy setup
 * No SQL database needed.
@@ -53,6 +48,9 @@ Developer-centric open source framework with Web content management, search inde
 * Real-time performance monitoring.
 
 ### Web content management
+* Access control for all Web Content Management roles and users.
+* Simple user interfaces to manage pages, users, roles, and the Web Application.
+* Adaptable with dynamic menu items, styling, page templates, and user control templates.
 * Template based solutions with lots of pretty templates ready to be used.
 * Role-based security.
 * Simple to create new content pages or edit existing ones.
@@ -74,6 +72,16 @@ Developer-centric open source framework with Web content management, search inde
 * All pre-made pages like search page, admin pages, and editor pages can be overridden with your own templates and/or logic.
 * Site map page.
 * Manage multiple web site within a single Microsoft Azure Table Storage.
+* WYSIWYG HTML text editor.
+* In-place editing
+* Automatic field updating using REST APIs
+
+### Blob Storage Management
+* Upload images to the cloud
+* Uses Azure Blob storage
+* Easy to change to Azure CDN
+* JPEG compression
+* Image resizing
 
 ### Performance
 * Pages are cached locally on each node and not retrieved from the database; and can therefore be loaded extremely fast.
@@ -117,7 +125,7 @@ Developer-centric open source framework with Web content management, search inde
   * Automatic sitemap.xml file generation.
 
 ### Background tasks
-* Framework for building multi-threaded worker role; each worker runs in its own thread.
+* Multi-threaded worker roles
   * Easy to extend with your own background tasks.
 * Worker Role that cleans up expired session-state data from the Azure Table Storage.
 * Worker roles are monitored and automatically restarted if they go down.
@@ -129,6 +137,7 @@ Developer-centric open source framework with Web content management, search inde
   * Simple API makes it easy to send e-mails from your code.
   * Will wait for a set time and retry for a set amount of times if sending an e-mail fails.
   * Simple to setup with your own SMTP e-mail server.
+  * Automatically embeds images in e-mails
   
 ### REST APIs
 * Ready to be used REST APIs.
@@ -136,6 +145,8 @@ Developer-centric open source framework with Web content management, search inde
 * Easy to extend with your own REST API functionality.
 * Supports XML, JSON, and JSONP interchange formats.
 * Optimized settings made by experts for the greatest possible throughput.
+* Run CRUD operations against the Web Content Management.
+* Run generic queries against any Azure Storage table and property.
 
 ### Diagnostics & logging to the Azure Table and Blob Storage
 * Centralized application and system logging with Web UI.
@@ -193,6 +204,7 @@ Developer-centric open source framework with Web content management, search inde
 ### Access control
 * ASP.NET memberships for users and roles.
 * Manage users and roles using Web UI.
+* Access control list rules on tables and table properties.
 
 ### Simple licensing
 * Simple Apache v2.0 license with only one extra paragraph

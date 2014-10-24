@@ -1,0 +1,50 @@
+button[type="submit"].bigButton {
+    float: left;
+
+    width: auto;
+    height: 3em;
+
+    position: absolute;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #ffffff;
+
+    background-color: #56a441;
+
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    margin: 0;
+    padding: 0 2em 0 3.5em;
+
+    border: 1px solid #c8c8c8;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    cursor: pointer;
+
+    background: rgb(86,164,65); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(86,164,65,1) 0%, rgba(86,164,65,1) 10%, rgba(255,255,255,1) 20%, rgba(86,164,65,1) 22%, rgba(86,164,65,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(86,164,65,1)), color-stop(10%,rgba(86,164,65,1)), color-stop(20%,rgba(255,255,255,1)), color-stop(22%,rgba(86,164,65,1)), color-stop(100%,rgba(86,164,65,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(86,164,65,1) 0%,rgba(86,164,65,1) 10%,rgba(255,255,255,1) 20%,rgba(86,164,65,1) 22%,rgba(86,164,65,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(86,164,65,1) 0%,rgba(86,164,65,1) 10%,rgba(255,255,255,1) 20%,rgba(86,164,65,1) 22%,rgba(86,164,65,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(86,164,65,1) 0%,rgba(86,164,65,1) 10%,rgba(255,255,255,1) 20%,rgba(86,164,65,1) 22%,rgba(86,164,65,1) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(86,164,65,1) 0%,rgba(86,164,65,1) 10%,rgba(255,255,255,1) 20%,rgba(86,164,65,1) 22%,rgba(86,164,65,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56a441', endColorstr='#56a441',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    background-size: 130%;
+    background-position: -6.6em;
+}
+
+/* Submit button icon */
+button[type="submit"].bigButton i {
+    float: left;
+    position: absolute;
+    left: 0.8em;
+    top: 0.7em;
+    font-size: 1.3em;
+}

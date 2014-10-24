@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="JailImage.ascx.cs" Inherits="VeraWAF.WebPages.Controls.JailImage" EnableViewState="false" %>
+<asp:Literal ID="litJailImageMarkup" runat="server"></asp:Literal>

@@ -1,0 +1,33 @@
+fieldset {
+    float: none;
+    display: inline-block;
+    margin: 1em 1em 1em 0;
+    padding: 1em 2em 1em 1em;
+    border: 1px solid #ccc;
+
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;    
+    border-radius: 16px;
+
+    background-color: #F0F0F0;
+}
+
+fieldset p {
+    margin: 1em;
+    clear: both;
+}
+
+fieldset.register label, fieldset.changePassword label, fieldset.information label, 
+fieldset.errorMessage label, fieldset.resetPassword label, fieldset.info label, fieldset.registerleft label {
+    display: block;
+}
+
+fieldset label.inline {
+    display: inline;
+}
+
+legend {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0.2em 0.4em 0.8em 0.4em;
+}

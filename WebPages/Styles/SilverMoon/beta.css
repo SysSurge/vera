@@ -1,0 +1,41 @@
+section#beta {
+    margin-top: 2em;
+
+    float: left;
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    z-index: 3;
+
+    left: 0;
+    top: 0;
+}
+
+/* Hidden field used to detect automatic form fillers and thereby prevent spam and/or request hammering */
+section#beta input#_email {
+    /* Don't use 'display:none' as some automatic form fillers may detect this */
+    opacity: 0.001;
+
+    width: 0.001em;
+    height: 0.001em;
+
+    padding: 0;
+    margin: 0;
+}
+
+section#beta #confirmation {
+    display: none;
+
+    color: #008800;
+    font-size: 1.3em;
+    font-weight: 200;
+
+    margin: 0 0.5em 0 0.1em;
+}
+
+section#beta #betaIcons {
+    display: none;
+    top: 0.3em;
+}

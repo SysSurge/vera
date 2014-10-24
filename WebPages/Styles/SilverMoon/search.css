@@ -1,0 +1,115 @@
+.searchPage input#MainContent_butSubmit
+{
+    font-weight: bold;
+}
+
+.searchPage .labelForQueryField 
+{
+    clear: both;
+    float: left;
+    margin-right: 1em;
+    height: 2em;
+    width: 100%;
+}
+
+.searchPage .queryField 
+{
+    clear: both;
+    float: left;
+    margin-right: 1em;
+    width: 48em;
+}
+
+.searchPage .queryFieldSubmit 
+{
+    float: left;
+}
+
+.searchPage .queryResults
+{
+    clear: both;
+    float: left;
+    margin-top: 2em;
+}
+
+.searchPage .queryResult, .content .queryResult 
+{
+    clear: both;
+    float: left;
+    margin-top: 2em;
+    width: 70em;
+}
+
+.searchPage .queryResult h1, .content .queryResult h1
+{
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.searchPage .queryResult h1 a, .content .queryResult h1 a
+{
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-weight: normal;
+}
+
+.searchPage .queryResult h2, .content .queryResult h2
+{
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.searchPage .queryResult h2 a, .content .queryResult h2 a
+{
+    font-weight: normal;
+}
+
+.searchPage .queryResult p, 
+.content .queryResult p, 
+.queryResult .queryResultRollupText
+{
+    margin: 0;
+}
+
+.searchPage .queryResult .queryResultFooter, .content .queryResult .queryResultFooter
+{
+    font-size: 0.8em;
+    height: 2em;
+}
+
+.searchPage a.queryHelp {
+    float: left;
+    margin-left: 1em;
+}
+
+.searchPage p.queryIngress {
+    margin-bottom: 3em;
+}
+
+.content .queryResult footer {
+    margin: 0;
+    height: 1.1em;
+}
+
+.queryResultFigure {
+    float: left;
+}
+
+.queryResultFigure img {
+    float: left;
+    
+    width: 64px;
+    height: 64px;
+
+    margin: 0 1em 1em 0;
+    
+    -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px #FFFFFF inset, 0 2px 16px rgba(0, 0, 0, 0.1);
+
+    border: none;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;  
+}

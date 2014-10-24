@@ -1,0 +1,8 @@
+.newsletterForm fieldset {
+    width: 98%;
+}
+
+.newsletter, .betaTester, .allowContactForm
+{
+    width: 100%;
+}

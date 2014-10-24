@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Syndication.aspx.cs" Inherits="VeraWAF.WebPages.Syndication" ViewStateMode="Disabled" %>

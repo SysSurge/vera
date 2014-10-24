@@ -1,0 +1,105 @@
+﻿
+/*
+iPhone 5 only:
+@media only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2)    
+*/
+@media (min-width: 560px) {
+    body{
+        /*background-color: green;*/
+    }
+
+    form {
+        font-size: 2em;
+    }
+
+    /* Level 1 menu */
+    .level1Menu div.menu  li {
+        display: block;
+        clear: both;
+        position: static !important;
+        width: 100% !important;
+        margin: 0 0 0 1em;
+        padding: 0;
+    }
+
+    .level1Menu div.menu ul {
+        display: block;
+        clear: both;
+        position: static !important;
+        width: 100% !important;
+        border: none !important;
+    }
+
+    .level1Menu div.menu > ul {
+        border: 0.1em solid black;
+
+        -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        border-radius: 0px !important;
+    }
+
+    nav#level1menu {
+        width: 100%;
+        height: initial;
+        background: none;
+    }
+
+    nav#level1menu div.level1MenuContainer {
+        width: 100%;
+        height: initial;
+        margin: initial;
+    }
+
+    nav#level1menu div.level1MenuContainer .level1Menu {
+        width: 100% !important;
+        height: initial;
+        float: none;
+    }
+
+    figure {
+        float: none !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* Sign in menu */
+    .loginDisplayNav {
+        min-width: initial;
+    }
+
+	header#top div#content {
+		position: static;
+        padding: 2.143em 2.143em 10%;
+        width: 50em;
+        height: 28em;
+        margin: 0;
+	}
+
+    /* Footer */
+    footer .footerSection {
+        display: block;
+        position: static;
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: 2em 0 0 0;
+    }
+
+    footer .rightmostfooterSection {
+        float: none;
+        text-align: left;
+    }
+
+    footer .footerSectionBottom {
+        float: none;
+        padding: 0;
+        margin: 2em 0;
+    }
+
+    footer .footerSectionBottom span.copyText,
+    footer .footerSectionBottom ul.socialList {
+        float: none;
+        padding: 0;
+        margin: 2em;
+    }
+}

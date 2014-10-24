@@ -1,0 +1,37 @@
+menu#level4 {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 1em 0 3em;
+}
+
+menu#level4 a {
+  color: #484848;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  white-space: nowrap;
+  line-height: 1.35em;
+  padding-left: 2em;
+}
+
+menu#level4 a:hover {
+    color: #2f98fe;
+    text-decoration: none;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+menu#level4 a:first-child {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+menu#level4 a:first-child:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  color: #aaaaaa;
+  padding-left: 1em;
+}

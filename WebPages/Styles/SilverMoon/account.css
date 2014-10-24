@@ -1,0 +1,94 @@
+.accountInfo {
+    float: none;
+
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: auto;  
+
+    white-space: nowrap;
+}
+
+.accountInfo .accountInfo-container {
+    width: 100%;
+
+    display: inline-block;
+    white-space: normal;
+}
+
+.accountInfo .accountInfo-container .local-account {
+    display: inline-block;
+    white-space: normal;
+}
+
+.accountInfo .accountInfo-container .local-account fieldset {
+    float: left;
+    display: block;
+}
+
+.accountInfo .accountInfo-container .local-account .newsletter label,
+.accountInfo .accountInfo-container .local-account .betaTester label,
+.accountInfo .accountInfo-container .local-account .confirm label {
+    float: left;
+}
+
+.accountInfo .accountInfo-container .local-account .submitButton {
+    margin-top: 2em;
+}
+
+.accountInfo .accountInfo-container .local-account .submitButton .bigButton {
+    float: none;
+    position: static;
+}
+.accountInfo .accountInfo-container .thirdPartyRegister {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.accountInfo fieldset.market {
+    width: 50em;    
+}
+
+.accountInfo fieldset.market div.leftContainer 
+{
+    float: left;
+    width: 20em;
+}
+
+.accountInfo fieldset.register, .accountInfo fieldset.comment, .accountInfo fieldset.market
+{
+    width: 28em;
+    background-color: #F0F0F0;
+}
+
+.accountInfo input.textEntry, .accountInfo input.passwordEntry
+{
+    width:93%;
+}
+
+.accountInfo input#MainContent_RegisterUser_CreateUserStepContainer_CreateUserButton,
+.accountInfo input#MainContent_ChangeUserPassword_ChangePasswordContainerID_ChangePasswordPushButton
+{
+    font-weight: bold;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+.submitButton {
+    clear: both;
+}
+
+.submitButton .bigButton {
+    min-width: 21em;
+}

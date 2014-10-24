@@ -1,0 +1,503 @@
+/* Main page content */
+main {
+    min-height: 40em;
+}
+
+/* Personalized menu container */
+.loginDisplay {
+    background: none;
+    height: 4em;
+}
+
+/* Personalized menu items container */
+.loginNav a, .loginNav a:hover {
+    text-shadow: none;
+}
+
+/* Main content */
+article#main {
+    clear: both;
+    display: block;
+}
+
+/* Main aside */
+aside#splash {
+    color: #fff;
+    clear: both;
+    float: left;
+    display: table;
+    background-color: #2F4F4F;
+    text-align: center;
+    width: 100%;
+    padding: 2em 0;
+    font-size: 2em;
+}
+
+/* Main aside title */
+aside#splash h2 {
+    font-size: 1.5em;
+	text-shadow: 0 0.01em 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Page header */
+header#top {
+	background-size: 35%;
+	overflow: hidden;
+    width: 95%;
+    max-width: 1500px;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header content container */
+header#top div#content-container {
+	width: 100%;
+    float: none;
+
+    max-width: 1500px;
+	max-height: 33em;
+
+    margin: auto;
+    padding: 0;
+}
+
+/* Header content */
+header#top div#content {
+    float: left;
+    width: 100%;
+    height: 33em;
+}
+
+/* Header content links */
+header#top div#content menu a {
+    float: left;
+    width: 10em;
+    margin: 1em 2em 0 0;
+}
+
+/* Page title */
+header#top h1 {
+	font-weight: 300;
+	font-size: 4em;
+	line-height: 1.15em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Page paragraph */
+header#top p {
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+/* Page main section */
+article#main section {
+    display: table;
+    font-weight: 300;
+
+    width: 100%;
+    min-width: 650px;
+    height: auto;
+}
+
+/* Page main section contents */
+article#main section .section-contents {
+    width: 95%;
+    max-width: 1500px;
+    margin: 3em auto;
+    display: table;
+}
+
+/* Page main section fact box/statement */
+article#main section div.facts {
+    float: left;
+    display: block;
+
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+
+    margin: auto;
+}
+
+/* Page main section fact box/statement title */
+article#main section div.facts h1 {
+    line-height: 1.4em;
+}
+
+/* Page main section fact box/statement unordered list */
+article#main section div.facts ul {
+    list-style-type: none;
+}
+
+/* Page main section fact box/statement ordered list */
+article#main section#get-started ol {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    color: #555;
+    float: left;
+    clear: both;
+}
+
+/* Page main section fact box/statement ordered list item */
+article#main section#get-started ol li {
+    display: inline;
+    float: left;
+    width: 33.333%;
+}
+
+/* Page main section fact box/statement ordered list item icon */
+article#main section#get-started ol li:before {
+    content: "\f0a9";
+    font-size: 2em;
+    float: left;
+    padding: 0.3em 1em 0;
+    font-family: FontAwesome;
+    color: #ccc;
+}
+
+/* Page main section fact box/statement ordered first list item icon */
+article#main section#get-started ol li:first-child::before {
+    content: "";
+    padding: 0;
+}
+
+/* Page main section fact box/statement ordered list section */
+article#main section#get-started ol li section {
+    float: left;
+}
+
+article#main section#get-started header h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+article#main section#get-started header h1 i {
+    color: #ccc;
+}
+
+article#main section#get-started header h1 i.left-arrow {
+    float: left;
+    padding-right: 0.3em;
+}
+
+article#main section#get-started header h1 i.right-arrow {
+    float: right;
+    padding-left: 0.3em;
+}
+
+article#main section#get-started ol li h2 {
+    color: #2b96fe;
+    font-size: 2.5em;
+    float: left;
+    line-height: 1.55em;
+}
+
+article#main section#get-started ol li p {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0 0 0 5.7em;
+    float: left;
+    clear: both;
+    text-align: left;
+}
+
+article#main section#get-started ol li:first-child p {
+    padding: 0;
+}
+
+/* Level 1 menu shadow #14aaf3 */
+div.level1MenuContainer:after {
+    /* Fallback image */
+    background: transparent url(/Images/hr.png) no-repeat 0px -15px;
+ 
+    /* Firefox 3.6+ */ 
+    background-image: -moz-radial-gradient(center top, ellipse farthest-corner, rgba(20, 170, 243, 0.1), transparent 70%);
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, rgba(20, 170, 243, 0.1), transparent 70%);
+
+    /* Opera 11.10+ */
+    background-image: -o-radial-gradient(center top, ellipse farthest-corner, rgba(20, 170, 243, 0.1), transparent 70%);
+
+    /* IE 10+ */
+    background-image: -ms-radial-gradient(center top, ellipse farthest-corner, rgba(20, 170, 243, 0.1), transparent 70%);
+
+    /* CSS 3 */
+    background-image: radial-gradient(center top, ellipse farthest-corner, rgba(20, 170, 243, 0.1), transparent 70%);       
+}
+
+/* White to blue gradiant background */
+article#main section.bg0 {
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #f1f8fc 88%, #d6edf9 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(88%,#f1f8fc), color-stop(100%,#d6edf9)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#f1f8fc 88%,#d6edf9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#f1f8fc 88%,#d6edf9 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#f1f8fc 88%,#d6edf9 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #ffffff 0%,#f1f8fc 88%,#d6edf9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6edf9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* White background */
+article#main section.bg1 {
+    background-color: #fff;
+}
+
+article#main section#get-started {
+    height: 12em;
+    color: #222;
+    border-top: 1px solid #ccc;
+}
+
+article#main section#get-started .section-contents div {
+    float: left;
+    width: 100%
+}
+
+a#learnMore {
+    float: left;
+    padding-top: 3.5em;
+    color: blue;
+    text-decoration: none;
+}
+
+button[type="submit"].bigButton {
+    position: relative;
+    left: 26em;
+    min-width: 23em;
+}
+
+article#main section#read-more {
+    background-color: #fff;
+    text-align: center;
+    font-size: 3em;
+    height: 1.5em;
+    float: none;
+    clear: both;
+    padding: 2em 0 2em;
+    margin: 0;
+    border-top: 1px solid #ccc;
+}
+
+article#main section#read-more a {
+    text-decoration: none;
+    color: #2b96fe;
+}
+
+article#main section#read-more a:hover {
+    text-decoration: underline;
+}
+
+article#main section#read-more i {
+    color: #cccccc;
+    padding-right: 0.3em;
+}
+
+section#share {
+    position: absolute;
+    left: 0;
+    top: 2.5em;
+
+    width: 100%;
+    height: 25px;
+
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    
+    overflow: hidden;
+    display: none;
+}
+
+article#main .section-contents div ul li:before {
+    content: "\f05d";
+
+    font-family: FontAwesome;
+    font-size: 1.5em;
+
+    position: relative;
+    top: 0.1em;
+    left: -0.3em;
+}
+
+article#main .section-contents div h1 {
+	color: #666;
+	font-size: 3em;
+    line-height: 1.4em;
+	font-weight: 300;
+
+    margin: 0 0 1em;
+}
+
+/* Background #0 section */
+article#main section.bg0 .section-contents div {
+	float: left;
+
+	width: 100%;
+	height: auto;
+
+    text-align: center;
+
+    font-size: 1.2em;
+}
+
+article#main section.bg0 .section-contents div ul {
+    padding: 0;
+}
+
+article#main section.bg0 .section-contents div ul li {
+	color: #444;
+	font-size: 1.5em;
+	font-weight: 300;
+    text-align: center;
+
+    list-style: none;
+
+    margin: 0 0 1.5em;
+}
+
+article#main section.bg0 .section-contents div ul li em {
+    font-style: normal;
+}
+
+/* Background #1 section */
+article#main section.bg1 .section-contents div {
+	float: right;
+
+	width: 50%;
+	height: auto;
+
+    text-align: center;
+
+    font-size: 1.2em;
+}
+
+article#main section.bg1 .section-contents div ul {
+    margin: 0 0 0 2em;
+    padding: 0;
+}
+
+article#main section.bg1 .section-contents div ul li {
+	color: #000;
+	font-size: 1.5em;
+	font-weight: 300;
+
+    list-style: none;
+
+    margin: 0 0 1.5em;
+}
+
+
+article#main section.bg1 .section-contents figure {
+	float: left;
+
+	width: 45%;
+	height: auto;
+
+    margin-right: 5%;
+}
+
+article#main section.bg1 .section-contents figure img {
+	width: 100%;
+	height: auto;
+}
+
+/* Edit page icons inside the ASIDE HTML element */
+aside#splash div.inputBox .toolIcon {
+    color: #fff;
+}
+
+@media (max-width: 750px) {
+    article#main section#get-started ol li:before {
+        display: none;
+    }
+
+    article#main section#get-started ol li {
+        font-size: 0.6em;
+    }
+
+    section#scale-autonomously .section-contents div ul li {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 1000px) {
+    article#main section#get-started ol li {
+        font-size: 0.8em;
+    }
+
+    section#scale-autonomously .section-contents div h1 {
+        margin: 1em 0 0;
+    }
+
+    section#scale-autonomously .section-contents div h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+	header#top {
+		/*max-height: 800px;*/
+	}
+}
+
+@media (max-width: 750px) {
+	header#top {
+		padding-bottom: 20%;
+		background-position: center bottom;
+		background-size: contain;
+	}
+
+	header#top div#content {
+		position: static;
+        padding: 2.143em 2.143em 10%;
+        width: 50em;
+        height: 28em;
+        margin: 0;
+	}
+
+    header#top:before {
+	    padding-top: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    header#top h1 {
+        font-size: 2.5em;
+    }
+
+    button[type="submit"].bigButton {
+        left: 0;
+        top: 4em;
+    }
+
+    section#beta {
+        width: 27em;
+        margin: auto;
+        float: none;
+    }
+
+    section#share {
+        top: 8em;
+    }
+}
+
+@media (max-width: 750px) {
+    button[type="submit"].bigButton {
+        left: 26em;
+        top: 0;
+    }
+
+    section#beta {
+        width: 100%;
+        margin: 1em 0 0;
+        float: left;
+    }
+
+    section#share {
+        top: 4.5em;
+    }
+
+}
+

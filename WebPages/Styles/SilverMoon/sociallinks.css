@@ -1,0 +1,45 @@
+ul.socialList {	
+    float: right;
+
+    margin: 0;
+    padding: 0;
+}
+
+ul.socialList li a {
+    color: #666666;
+    font-size: 1.2em;
+}
+
+ul.socialList li a i.icon-top {
+    color: #fff;
+    font-size: 1.0em;
+}
+
+ul.socialList > * {
+  display: block;
+  float: left;
+}
+
+ul.socialList > * + * {
+  margin-left: 17px;
+}
+
+ul.socialList li a:hover {
+    /* Smooth transitions*/
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+ul.socialList li a#twitter:hover {
+    color: #55acee;
+}
+
+ul.socialList li a#facebook:hover {
+    color: #3b5998;
+}
+
+ul.socialList li a#linkedin:hover {
+    color: #4875b4;
+}

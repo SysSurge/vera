@@ -1,0 +1,37 @@
+/* Legacy browser support if no suppot for VW font sizes */
+@media screen and (min-width: 1400px) {
+	form {
+		font-size: 1.05em;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	form {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 2200px) {
+	form {
+		font-size: 1.15em;
+	}
+}
+
+@media screen and (min-width: 2600px) {
+	form {
+		font-size: 1.2em;
+	}
+}
+
+/* New browsers will use the VW font size */
+form {
+	font-size: 1.0vw;
+    min-width: 500px;
+}
+
+/* Prevent font size less than 12px when body font is 14px */
+@media screen and (max-width: 1200px) {
+	form {
+		font-size: 0.857em;
+	}
+}

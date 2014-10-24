@@ -1,0 +1,53 @@
+/* Symbols like Trademarks etc. */
+
+/* Big sized text trademarks */
+.tm:after 
+{
+    font-weight: normal;
+    font-size: 50%;
+    content: "\2122";
+    vertical-align: 40%;
+}
+
+.registeredTm:after 
+{
+    font-weight: normal;
+    font-size: 50%;
+    content: "\00ae";
+    vertical-align: 40%;
+}
+
+/* Medium sized text trademarks */
+.tm2:after 
+{
+    font-weight: normal;
+    font-size: 50%;
+    content: "\2122";
+    vertical-align: 20%;
+}
+
+.registeredTm2:after 
+{
+    font-weight: normal;
+    font-size: 50%;
+    content: "\00ae";
+    vertical-align: 20%;
+}
+
+/* Small sized text trademarks */
+.tm3:after 
+{
+    font-weight: normal;
+    font-size: 80%;
+    content: "\2122";
+    vertical-align: 10%;
+}
+
+.registeredTm3:after 
+{
+    font-weight: normal;
+    font-size: 80%;
+    content: "\00ae";
+    vertical-align: 10%;
+}
+

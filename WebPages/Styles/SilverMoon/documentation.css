@@ -1,0 +1,90 @@
+.documentation {
+    float: left;
+    width: 100%;
+    min-width: 750px;
+    text-align: left;
+}
+
+.page3 .main .documentation h1 {
+    color: #000;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.documentation .top {
+    float: none;
+}
+
+.documentation .pageFooter {
+    float: none;
+    clear: none;
+    width: 100%;
+    height: 1.286em;
+}
+
+.documentation .pageFooter footer {
+    float: none;
+}
+
+.documentation header {
+    float: none;
+    width: 100%;
+}
+
+.documentation .plusone
+{
+    float: left;
+    width: 24px;
+    height: 18px;
+    left: inherit;
+    top: inherit;
+    position: inherit;
+    overflow: hidden;
+}
+
+.documentation .addthis_toolbox 
+{
+    float: left;
+    width: 200px;
+    height: 18px;
+    left: inherit;
+    top: inherit;
+    position: inherit;
+    overflow: hidden;    
+}
+
+.documentation .pageFooter .section 
+{
+    float: none;
+    clear: none;
+    height: 1.214em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.documentation .pageFooter small {
+    float: none;
+}
+
+/* Codemirror v3.20 */
+div.CodeMirror {
+    float: none;
+
+    font-size: 0.8em;
+
+    width: 55em;
+    max-width: 55em;
+    height: 30em;
+
+    border: 1px solid #aaa;
+    margin-top: 1em;
+}
+/*
+Codemirror will show this textarea if Javascript is disabled on the client, 
+otherwise it is hidden from view.
+*/
+textarea.codeblock {
+    width: 55em;
+    max-width: 55em;
+    height: 30em;
+}

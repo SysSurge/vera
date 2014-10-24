@@ -1,0 +1,13 @@
+fieldset.market div > p {
+    margin-bottom: 2em;    
+}
+
+fieldset.market div.rightContainer {
+    float: left;
+    width: 30em;
+}
+
+fieldset.market label
+{
+    display: block;
+}

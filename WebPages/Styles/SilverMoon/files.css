@@ -1,0 +1,18 @@
+.fileList fieldset {
+    width: 98%;    
+}
+
+table.filesGrid {
+    width: 100%;
+}
+
+table.filesGrid tr td {
+    max-width: 46.429em;
+}
+
+table.filesGrid tr td a {
+    max-width: 46.429em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}

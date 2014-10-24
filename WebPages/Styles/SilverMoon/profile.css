@@ -1,0 +1,162 @@
+.profile .forumPostList {
+    float: left;
+    width: 100%;
+}
+
+.profile .forumPostList table {
+    width: 100%;
+}
+
+.profile .profileMetaData {
+    padding: 2em 0 2em 0;
+}
+
+.profile .socialScore {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.profile .socialScore var {
+    color: #3399FE;
+}
+
+.profile a.publicProfile {
+    margin: 1em 0;
+}
+
+.profile input.submitButton {
+    margin: 1em 1em 1em 0;
+}
+
+.profile #MainContent_divUserOptions {
+    padding-top: 1em;
+}
+
+.profile fieldset {
+    display: inline-block;
+    max-width: 58em;
+}
+
+.profile .information span{
+    margin-bottom: 1em;
+}
+
+.profile .information span,
+.profile .information span label  {
+    float: none;
+    text-align: left;
+    display: inherit;
+    padding: 0 0.5em 0 0;
+}
+
+.profile .information img {
+    max-width: 14.286em;
+    max-height: 14.286em;
+
+    margin: 0.1em;
+    margin:  0.1em;
+    border: 1px solid #000000;
+
+    border-color: #c9c9c9 #bbbbbb #aaaaaa;
+    border-style: solid;
+    border-width: 1px;
+    
+    -moz-box-shadow: 0  0.1em 1.143em rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0  0.1em 1.143em rgba(0, 0, 0, 0.1);
+    box-shadow: 0  0.1em  0.1em #FFFFFF inset, 0  0.1em 1.143em rgba(0, 0, 0, 0.1);
+    
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;    
+}
+
+.profile fieldset.market {
+    width: 31em;
+    float: right;
+}
+
+.profile fieldset.market div.leftContainer {
+    width: 20em;
+}
+
+.profile input[type="text"] {
+    width: 28em;
+}
+
+.profile textarea {
+    width: 28em;
+}
+
+.contactUser input[type="text"] {
+    clear: both;
+    width: 19em;
+}
+
+.profile .information p {
+    float: left;
+    width: 90%;
+}
+
+.profile fieldset.portrait {
+    float: left;
+    width: 20em;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.profile fieldset.portrait input[type="file"] {
+}
+.profile fieldset.portrait input[type="submit"] {
+    clear: both;
+    margin: 1em 0;
+    width: 13.5em;
+}
+
+.profile .allowContactForm {
+    clear: both;
+    float:left;
+    width: 100%;
+}
+
+fieldset.changePassword, fieldset.deleteAccount {
+    width: 20em;
+}
+
+.profile .newsletter {
+    clear: both;
+    float:left;
+    width: 100%;
+}
+
+.profile .betaTester {
+    clear: both;
+    float:left;
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+fieldset.comment textarea {
+    width: 97%;
+    height: 97px;
+}
+
+.profile input#MainContent_SubmitButton
+{
+    font-weight: bold;
+}
+
+/* Forums posts */
+.forumPostList {
+    margin-top: 1em;
+}
+
+.forumPostList .statistics {
+    float: left;
+    background-color: #ffffff;
+    padding: 0.2em 0.5em;
+    margin-right: 1em;
+}
+
+.forumPostList h1 {
+    font-size: 1.2em !important;
+}

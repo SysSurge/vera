@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserRoles.ascx.cs" Inherits="VeraWAF.WebPages.Controls.UserRoles" EnableViewState="false" %>
+<asp:Literal ID="litRoles" runat="server"></asp:Literal>

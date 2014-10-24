@@ -1,0 +1,91 @@
+
+a.registerButton > span {
+    float: none;
+}
+
+a.registerButton > span:first-child
+{
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.6em;
+}
+
+a.registerButton
+{
+    float: left;
+    color: #ffffff;
+
+    position: relative;
+    left: 183px;
+    top: -111px;
+
+    text-align: center;
+
+    width: 178px;
+    height: 74px;
+    text-decoration: none;
+    padding: 0.3em 1.4em;
+    
+    border-color: #FFFFFF #52993F #066401;
+    border-width: 2px;
+    border-style: solid;
+    
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;    
+    border-radius: 40px;
+    
+    text-shadow: 1px 1px 0px #000000;
+
+    -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px #FFFFFF inset, 0 2px 16px rgba(0, 0, 0, 0.1);
+
+    /* Fallback/image non-cover color */
+    background: #72b95f url(/Images/button_big.png) repeat-x;
+
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9fd990), to(#469431));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background: -webkit-gradient(linear, center top, center bottom, from(#9fd990), to(#469431));
+    
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(center top , #9fd990, #469431) repeat scroll 0 0 transparent;
+    
+    /* IE 6-9 */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9fd990', endColorstr='#469431');*/
+    
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #9fd990, #469431);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #9fd990, #469431);        
+}
+
+a.registerButton:hover {    
+    /* Fallback/image non-cover color */
+    background: #82c96f url(/Images/button_big.png) repeat-x;
+
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afe9a0), to(#56a441));
+
+   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background: -webkit-gradient(linear, center top, center bottom, from(#afe9a0), to(#56a441));
+    
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(center top , #afe9a0, #56a441) repeat scroll 0 0 transparent;
+    
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #afe9a0, #56a441);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #afe9a0, #56a441);
+}
+
+a.registerButton span
+{
+    float: left;
+    font-weight: normal;
+    font-size: 9pt;
+    color: #ffffff;    
+}

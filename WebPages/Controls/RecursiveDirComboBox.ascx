@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="RecursiveDirComboBox.ascx.cs" Inherits="VeraWAF.WebPages.Controls.RecursiveDirComboBox" %>
+<asp:DropDownList ID="cmbDirectories" AppendDataBoundItems="true" runat="server"></asp:DropDownList>

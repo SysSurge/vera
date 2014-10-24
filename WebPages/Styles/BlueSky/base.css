@@ -1,0 +1,191 @@
+/* All HTML elements */
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* HTML page */
+html {
+	text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* HTML BODY element*/
+body {
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400; 
+    color: #034af3;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #ecf8ff;
+}
+
+/* IMG and OBJECT elements */
+img, object {
+    max-width: 100%;
+}
+
+/* Links */
+a {
+    color: #034af3;
+}
+
+/* Hovering over links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Active links */
+a:active {
+    color: #034af3;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6em;
+}
+
+/* Table headers & columns */
+th, td {
+    padding: 0.5em;
+}
+
+/* Table headers */
+th {
+    text-align: center;
+}
+
+/* Table columns */
+td {
+    text-align: left;
+}
+
+/* VAR elements (numebrs like scores etc) */
+var {
+    font-style: normal;    
+}
+
+/* Strong text */
+strong {
+    clear: both;
+    float: left;
+    text-align: center;
+
+    padding: 1em;    
+    margin: 1em 0;
+
+    background-color: #fff;
+    
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    border: 1px solid #ccc;    
+
+    -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px #fff inset, 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #666;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/* H1 ELEMENT header */
+h1 {
+    font-size: 1.6em;
+    line-height: 2em;
+}
+
+/* H2 ELEMENT header */
+h2 {
+    font-size: 1.5em;
+    line-height: 1.9em;
+}
+
+/* H3 ELEMENT header */
+h3 {
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+
+/* H4 ELEMENT header */
+h4 {
+    font-size: 1.3em;
+    line-height: 1.7em;
+}
+
+/* H5 ELEMENT header */
+h5 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+
+/* H6 ELEMENT header */
+h6 {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center; 
+}
+
+mark {
+    background-color:#fff700;
+}
+
+menu {
+    padding: 0;
+    margin: 1em 0;
+}
+
+blockquote 
+{
+    float: left;
+    background-color: #e8e8e8;
+    color: #666666;
+    border: 1px solid #666666;
+    margin: 1em;
+    padding: 1em;
+    
+    max-width: 58em;
+    overflow: hidden;    
+
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;    
+    border-radius: 0.4em;    
+
+    -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px #FFFFFF inset, 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+blockquote:before {
+    content: "“";
+    float: left;
+    font: 80px/1 Georgia,serif;
+    margin: -7px 10px 0 0px;
+    color: #999999;
+}
+
+/* Use this to center align UL elements*/
+ul, ul.center {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}

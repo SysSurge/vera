@@ -1,0 +1,19 @@
+.confirm
+{
+    padding: 2em 0;
+}
+
+/* E-mail sent confirmation text*/
+div#MainContent_RegisterUser_CompleteStepContainer_panEmailSentMessage {
+    color: #009900;
+}
+
+input.textEntryHp, .labelEntryHp
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    display: none;
+}
+
