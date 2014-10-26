@@ -40,8 +40,6 @@
             <br />
             <a href="/Feeds.aspx">RSS feeds</a>
             <br />
-            <a href="/Trademarks.aspx">Trademarks</a>
-            <br />
             <a href="/SiteMapOverview.aspx">Site map</a>
             <br />
         </section>

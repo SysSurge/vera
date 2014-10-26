@@ -117,9 +117,232 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CommentingIngress" xml:space="preserve">
+    <value>{0} allows for commenting on certain page templates, users can markup comments with BBCode's.</value>
+    <comment>Replace uses {0} for web address.</comment>
+  </data>
+  <data name="CommentingTitle" xml:space="preserve">
+    <value>Help on commenting</value>
+  </data>
+  <data name="CommentMainContent" xml:space="preserve">
+    <value>&lt;h3&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;&lt;i&gt;BBCode &lt;/i&gt;or Bulletin Board Code is a lightweight markup language used to format posts in many message boards. The available tags are usually indicated by square brackets ([ ]) surrounding a keyword, and they are parsed by the message board system before being translated into a markup language that web browsers understand—usually HTML or XHTML.&lt;/p&gt;
+&lt;p&gt;BBCode was first introduced in 1998 by the message board software Ultimate Bulletin Board (UBB). This is why BBCode is sometimes referred to as UBBCode.&lt;/p&gt;
+
+&lt;h3&gt;Purpose&lt;/h3&gt;
+
+&lt;p&gt;BCode was devised to provide a safer, easier and more limited way of allowing users to format their messages. Previously, many message boards allowed the users to include HTML formatting, a side effect of which was that malformed HTML could disrupt the page's layout, or HTML could be used to run JavaScript leading to XSS attacks.&lt;/p&gt;
+
+&lt;h3&gt;Supported BBCodes&lt;/h3&gt;
+&lt;p&gt;Here is an overview of the supported BBCode's when commenting on {0}:&lt;/p&gt;
+
+&lt;table border="1" style="max-width: 880px;background-color:#ffffff"&gt;  
+&lt;tbody&gt;
+&lt;tr&gt;
+    
+&lt;th&gt;BBCode&lt;/th&gt;
+    
+&lt;th&gt;Example HTML&lt;/th&gt;
+    
+&lt;th&gt;Effect&lt;/th&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[code]monospaced text[/code]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;pre&amp;gt;monospaced text&amp;lt;/pre&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;pre&gt;monospaced text&lt;/pre&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[b]bolded text[/b]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;b&amp;gt;bolded text&amp;lt;/b&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;b&gt;bolded text&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[i]italic text[/i]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;i&amp;gt;italic text&amp;lt;/i&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;b&gt;italic text&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[u]underlined text[/u]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;u&amp;gt;underlined text&amp;lt;/u&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;u&gt;underlined text&lt;/u&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[s]strikethrough text[/s]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;strike&amp;gt;strikethrough text&amp;lt;/strike&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;strike&gt;strikethrough text&lt;/strike&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[left]left align text[/left]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;div style=\"text-align:left\"&amp;gt;left align text&amp;lt;/div&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;
+&lt;div style="\&amp;quot;text-align:left\&amp;quot;"&gt;left align text&lt;/p&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[right]right align text[/right]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;div style=\"text-align:right\"&amp;gt;right align text&amp;lt;/div&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;
+&lt;div style="\&amp;quot;text-align:right\&amp;quot;"&gt;right align text&lt;/p&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[center]center align text[/center]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;div style=\"text-align:center\"&amp;gt;center align text&amp;lt;/div&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;
+&lt;div style="\&amp;quot;text-align:center\&amp;quot;"&gt;center align text&lt;/p&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[quote]quoted text[/quote] or [quote=Jimmy]quoted text[/quote]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;blockquote&amp;gt;quoted text&amp;lt;/blockquote&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;blockquote&gt;
+&lt;p&gt;quoted text&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[url]http://example.org[/url] or [link]http://example.org[/link]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;a href="http://example.org" target="_blank"&amp;gt;http://example.org&amp;lt;/a&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;a href="http://example.org/" target="_blank"&gt;http://example.org&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[url=http://example.com]Example[/url] or [link=http://example.com]Example[/link]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;a href="http://example.org" target="_blank"&amp;gt;Example&amp;lt;/a&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;a href="http://example.org/" target="_blank"&gt;Example&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[color=#008800]Green text[/color]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;span style="color:#008800;"&amp;gt;Green text&amp;lt;/span&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;span style="color:#008800;"&gt;Green text&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[hr] (Horisontal seperator)&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;hr /&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;
+&lt;hr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[email]someone@example.com[/email]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;a href=\"mailto:someone@example.com\"&amp;gt;&lt;br&gt;someone@example.com&amp;lt;/a&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;a href="https://www.sparkledb.net/%22mailto:someone@example.com/%22"&gt;someone@example.com&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[font=Tahoma]text in another font[/font]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;span style="font-family:Tahoma;"&amp;gt;text in another font&amp;lt;/span&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;span style="font-family:Tahoma;"&gt;text in another font&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[align=right]right aligned text[/align]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;span style="text-align:right;"&amp;gt;right aligned text&amp;lt;/span&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;span style="text-align:right;"&gt;right aligned text&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[float=right]right floated text[/float]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;span style="float:right;"&amp;gt;right floated text&amp;lt;/span&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;&lt;span style="float:right;"&gt;right floated text&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+  
+&lt;tr&gt;
+    
+&lt;td&gt;[list] [*]Entry 1 [*]Entry 2 [/list]&lt;/td&gt;
+    
+&lt;td&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Entry 1&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Entry 2&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/td&gt;
+    
+&lt;td&gt;
+&lt;ul&gt;
+&lt;li&gt;Entry 1&lt;/li&gt;
+&lt;li&gt;Entry 2&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+&lt;/tbody&gt;&lt;/table&gt;</value>
+    <comment>Replace uses {0} for web address.</comment>
+  </data>
   <data name="FrontPageAsideContent" xml:space="preserve">
-    <value>&lt;p&gt;
-	Vivamus quam ex, suscipit non risus non, cursus malesuada tellus.&lt;/p&gt;</value>
+    <value>&lt;p&gt;In principio erat Verbum et Verbum erat apud Deum et Deus erat Verbum.&lt;/p&gt;</value>
   </data>
   <data name="FrontPageHeaderContent" xml:space="preserve">
     <value>&lt;div style="float:left;background: url('/Images/officebuilding1.jpg') left 4em no-repeat;width: 50%;height: 55em;background-size: 90%;"&gt;
@@ -185,5 +408,348 @@
   </data>
   <data name="FrontPageTitle" xml:space="preserve">
     <value>Front page</value>
+  </data>
+  <data name="PrivacyIngress" xml:space="preserve">
+    <value>YOU MUST CAREFULLY READ THE FOLLOWING PRIVACY POLICIES BEFORE USING {0} (THE "SERVICE"). IF YOU DO NOT AGREE WITH THE POLICIES OF THIS AGREEMENT (THE "PRIVACY POLICY"), DO NOT USE THE SERVICE. USING ANY PART OF THE SERVICE INDICATES THAT YOU ACCEPT THESE POLICIES. ANY PART OF THE AGREEMENT MAY CHANGE AT ANY TIME WITHOUT FURTHER NOTICE, SO WE RECOMMEND THE USER TO PERIODICALLY REVIEW THE POLICIES IN THE AGREEMENT.</value>
+    <comment>Replace uses {0} for web address.</comment>
+  </data>
+  <data name="PrivacyMainContent" xml:space="preserve">
+    <value>&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;{0} value our users privacy. The Service users e-mail address or other personal data will not be shared, rented or sold to any third party.&lt;/p&gt;
+&lt;h3&gt;Commitment&lt;/h3&gt;
+&lt;p&gt;We are committed to privacy and support current industry initiatives to preserve individual privacy rights on the Internet. Protecting your privacy online is an evolving area, and {0} is constantly evolving to meet these demands.&lt;/p&gt;
+&lt;h3&gt;Security&lt;/h3&gt;
+&lt;p&gt;Wherever your personal information may be held within the Service or on its behalf, we intend to take reasonable and appropriate steps to protect the personal information that you share with us from unauthorized access or disclosure.&lt;/p&gt;
+&lt;h3&gt;Children's Privacy&lt;/h3&gt;
+&lt;p&gt;The Service is not structured to attract children. Accordingly, we do not intend to collect personal information from anyone we know to be under 13 years of age.&lt;/p&gt;
+&lt;h3&gt;Cookies&lt;/h3&gt;
+&lt;p&gt;The Service do not make use of cookies to track our users except for storing user session-state while visiting the Service. The session-state cookie last 60 minutes after the users last visit and is not intended to be shared with other services.&lt;/p&gt;</value>
+    <comment>Replace uses {0} for company name.</comment>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Privacy policy</value>
+  </data>
+  <data name="QuerySyntaxMainContent" xml:space="preserve">
+    <value>&lt;h3&gt;Overview&lt;/h3&gt;
+
+&lt;p&gt;This web site provides a rich query language through the Query Parser; a lexer which interprets a string into a query.&lt;/p&gt;
+
+
+&lt;h3&gt;Terms&lt;/h3&gt;
+
+&lt;p&gt;A query is broken up into terms and operators. There are two types of terms: Single Terms and Phrases.&lt;/p&gt;
+
+&lt;p&gt;A Single Term is a single word such as "test" or "hello".&lt;/p&gt;
+
+&lt;p&gt;A Phrase is a group of words surrounded by double quotes such as "hello dolly".&lt;/p&gt;
+
+&lt;p&gt;Multiple terms can be combined together with Boolean operators to form a more complex query (see below).&lt;/p&gt;
+
+&lt;p&gt;Note: The analyzer used to create the index will be used on the terms and phrases in the query string. So it is important to choose an analyzer that will not interfere with the terms used in the query string.&lt;/p&gt;
+
+
+&lt;h3&gt;Fields&lt;/h3&gt;
+
+&lt;p&gt;www.example.com supports fielded data. When performing a search you can either specify a field, or use the default field. The field names and default field is implementation specific.&lt;/p&gt;
+
+&lt;p&gt;You can search any field by typing the field name followed by a colon ":" and then the term you are looking for.&lt;/p&gt;
+
+&lt;p&gt;As an example, let's assume a www.example.com index contains two fields, title and text and text is the default field. If you want to find the document entitled "The Right Way" which contains the text "don't go this way", you can enter:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;title:"The Right Way" AND text:go&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;or&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;title:"Do it right" AND right&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;Since text is the default field, the field indicator is not required.&lt;/p&gt;
+
+&lt;p&gt;Note: The field is only valid for the term that it directly precedes, so the query&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;title:Do it right&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;Will only find "Do" in the title field. It will find "it" and "right" in the default field (in this case the text field).&lt;/p&gt;
+
+
+&lt;h3&gt;Term Modifiers&lt;/h3&gt;
+
+&lt;p&gt;www.example.com supports modifying query terms to provide a wide range of searching options.&lt;/p&gt;
+
+
+&lt;h3&gt;Wildcard Searches&lt;/h3&gt;
+
+&lt;p&gt;www.example.com supports single and multiple character wildcard searches within single terms (not within phrase queries).&lt;/p&gt;
+
+&lt;p&gt;To perform a single character wildcard search use the "?" symbol.&lt;/p&gt;
+
+&lt;p&gt;To perform a multiple character wildcard search use the "*" symbol.&lt;/p&gt;
+
+&lt;p&gt;The single character wildcard search looks for terms that match that with the single character replaced. For example, to search for "text" or "test" you can use the search:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;te?t&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;Multiple character wildcard searches looks for 0 or more characters. For example, to search for test, tests or tester, you can use the search:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;test*&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;You can also use the wildcard searches in the middle of a term.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;te*t&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;Note: You cannot use a * or ? symbol as the first character of a search.&lt;/p&gt;
+
+
+&lt;h3&gt;Fuzzy Searches&lt;/h3&gt;
+
+&lt;p&gt;www.example.com supports fuzzy searches based on the Levenshtein Distance, or Edit Distance algorithm. To do a fuzzy search use the tilde, "~", symbol at the end of a Single word Term. For example to search for a term similar in spelling to "roam" use the fuzzy search:&lt;/p&gt;
+
+&lt;p&gt;roam~&lt;/p&gt;
+
+&lt;p&gt;This search will find terms like foam and roams.&lt;/p&gt;
+
+&lt;p&gt;Starting with www.example.com 1.9 an additional (optional) parameter can specify the required similarity. The value is between 0 and 1, with a value closer to 1 only terms with a higher similarity will be matched. For example:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;roam~0.8&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;The default that is used if the parameter is not given is 0.5.&lt;/p&gt;
+
+
+&lt;h3&gt;Proximity Searches&lt;/h3&gt;
+
+&lt;p&gt;www.example.com supports finding words are a within a specific distance away. To do a proximity search use the tilde, "~", symbol at the end of a Phrase. For example to search for a "SPARQL" and "rdf" within 10 words of each other in a document use the search:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;"rdf SPARQL"~10&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;h3&gt;Range Searches&lt;/h3&gt;
+
+&lt;p&gt;Range Queries allow one to match documents whose field(s) values are between the lower and upper bound specified by the Range Query. Range Queries can be inclusive or exclusive of the upper and lower bounds. Sorting is done lexicographically.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;mod_date:[20020101 TO 20030101]&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;This will find documents whose mod_date fields have values between 20020101 and 20030101, inclusive. Note that Range Queries are not reserved for date fields. You could also use range queries with non-date fields:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;title:{Aida TO Carmen}&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;This will find all documents whose titles are between Aida and Carmen, but not including Aida and Carmen.&lt;/p&gt;
+
+&lt;p&gt;Inclusive range queries are denoted by square brackets. Exclusive range queries are denoted by curly brackets.&lt;/p&gt;
+
+&lt;h3&gt;Boosting a Term&lt;/h3&gt;
+
+&lt;p&gt;www.example.com provides the relevance level of matching documents based on the terms found. To boost a term use the caret, "^", symbol with a boost factor (a number) at the end of the term you are searching. The higher the boost factor, the more relevant the term will be.&lt;/p&gt;
+
+&lt;p&gt;Boosting allows you to control the relevance of a document by boosting its term. For example, if you are searching for&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;rdf SPARQL&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;and you want the term "rdf" to be more relevant boost it using the ^ symbol along with the boost factor next to the term. You would type:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;rdf^4 SPARQL&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;This will make documents with the term rdf appear more relevant. You can also boost Phrase Terms as in the example:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;"rdf SPARQL"^4 "SPARQL Website"&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;By default, the boost factor is 1. Although the boost factor must be positive, it can be less than 1 (e.g. 0.2)&lt;/p&gt;
+
+
+&lt;h3&gt;Boolean Operators&lt;/h3&gt;
+
+&lt;p&gt;Boolean operators allow terms to be combined through logic operators. www.example.com supports AND, "+", OR, NOT and "-" as Boolean operators(Note: Boolean operators must be ALL CAPS).&lt;/p&gt;
+
+&lt;p&gt;The OR operator is the default conjunction operator. This means that if there is no Boolean operator between two terms, the OR operator is used. The OR operator links two terms and finds a matching document if either of the terms exist in a document. This is equivalent to a union using sets. The symbol || can be used in place of the word OR.&lt;/p&gt;
+
+&lt;p&gt;To search for documents that contain either "rdf SPARQL" or just "rdf" use the query:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;"rdf SPARQL" rdf&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;or&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;"rdf SPARQL" OR rdf&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;h3&gt;AND&lt;/h3&gt;
+
+&lt;p&gt;The AND operator matches documents where both terms exist anywhere in the text of a single document. This is equivalent to an intersection using sets. The symbol &amp;amp;&amp;amp; can be used in place of the word AND.&lt;/p&gt;
+
+&lt;p&gt;To search for documents that contain "rdf SPARQL" and "SPARQL www.example.com" use the query:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;"rdf SPARQL" AND "SPARQL Website"&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;h3&gt;+&lt;/h3&gt;
+
+&lt;p&gt;The "+" or required operator requires that the term after the "+" symbol exist somewhere in a the field of a single document.&lt;/p&gt;
+
+&lt;p&gt;To search for documents that must contain "rdf" and may contain "www.example.com" use the query:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;+rdf Website&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;h3&gt;NOT&lt;/h3&gt;
+
+&lt;p&gt;The NOT operator excludes documents that contain the term after NOT. This is equivalent to a difference using sets. The symbol ! can be used in place of the word NOT.&lt;/p&gt;
+
+&lt;p&gt;To search for documents that contain "rdf SPARQL" but not "SPARQL www.example.com" use the query:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;"rdf SPARQL" NOT "SPARQL Website"&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;Note: The NOT operator cannot be used with just one term. For example, the following search will return no results:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;NOT "rdf SPARQL"&lt;/div&gt;
+&lt;p&gt;
+&lt;/p&gt;&lt;h3&gt;-&lt;/h3&gt;
+
+&lt;p&gt;The "-" or prohibit operator excludes documents that contain the term after the "-" symbol.&lt;/p&gt;
+
+&lt;p&gt;To search for documents that contain "rdf SPARQL" but not "SPARQL www.example.com" use the query:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;"rdf SPARQL" -"SPARQL www.example.com"&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+&lt;h3&gt;Grouping&lt;/h3&gt;
+
+&lt;p&gt;www.example.com supports using parentheses to group clauses to form sub queries. This can be very useful if you want to control the boolean logic for a query.&lt;/p&gt;
+
+&lt;p&gt;To search for either "rdf" or "SPARQL" and "website" use the query:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;(rdf OR SPARQL) AND website&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;This eliminates any confusion and makes sure you that website must exist and either term rdf or SPARQL may exist.&lt;/p&gt;
+
+&lt;h3&gt;Field Grouping&lt;/h3&gt;
+
+&lt;p&gt;www.example.com supports using parentheses to group multiple clauses to a single field.&lt;/p&gt;
+
+&lt;p&gt;To search for a title that contains both the word "return" and the phrase "pink panther" use the query:&lt;/p&gt;
+
+&lt;p&gt;title:(+return +"pink panther")&lt;/p&gt;
+
+
+&lt;h3&gt;Escaping Special Characters&lt;/h3&gt;
+
+&lt;p&gt;www.example.com supports escaping special characters that are part of the query syntax. The current list special characters are&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;+ - &amp;amp;&amp;amp; || ! ( ) { } [ ] ^ " ~ * ? : \&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;To escape these character use the \ before the character. For example to search for (1+1):2 use the query:&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class="asp" style="border:1px dashed silver;margin:10px;padding:5px;background:cornsilk;font-family:monospace;font-size:12px;"&gt;\(1\+1\)\:2&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;
+        &lt;/p&gt;</value>
+  </data>
+  <data name="QuerySyntaxTitle" xml:space="preserve">
+    <value>Query syntax guide</value>
+  </data>
+  <data name="SyndicationIngress" xml:space="preserve">
+    <value>List of available Web syndication methods.</value>
+  </data>
+  <data name="SyndicationMainContent" xml:space="preserve">
+    <value>&lt;p&gt;&lt;a href="/Syndication.aspx?path=/"&gt;Everything published on {0}&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="/Syndication.aspx?path=/Forums/"&gt;All forum posts on {0}&lt;/a&gt;&lt;/p&gt;</value>
+    <comment>Replace uses {0} for web address.</comment>
+  </data>
+  <data name="SyndicationTitle" xml:space="preserve">
+    <value>{0} Web Syndication</value>
+    <comment>Replace uses {0} for company name.</comment>
+  </data>
+  <data name="TermsIngress" xml:space="preserve">
+    <value>YOU MUST CAREFULLY READ THE FOLLOWING TERMS AND CONDITIONS BEFORE USING {0} (THE "SERVICE"). IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS OF THIS AGREEMENT (THE "TERMS OF SERVICE"), DO NOT USE THE SERVICE. USING ANY PART OF THE SERVICE INDICATES THAT YOU ACCEPT THESE TERMS. ANY PART OF THE AGREEMENT MAY CHANGE AT ANY TIME WITHOUT FURTHER NOTICE, SO WE RECOMMEND THE USER TO PERIODICALLY REVIEW THE TERMS AND CONDITIONS IN THE AGREEMENT.</value>
+    <comment>Replace uses {0} for web address.</comment>
+  </data>
+  <data name="TermsMainContent" xml:space="preserve">
+    <value>COPYRIGHT (C) {1} {0}. 
+
+&lt;p&gt;BY USING THIS SERVICE, YOU AGREE THAT THIS AGREEMENT IS A LEGALLY BINDING AND VALID CONTRACT, AGREE TO COMPLY WITH ALL RELEVANT INTELLECTUAL PROPERTY RIGHT LAWS AND ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT, AND FURTHER AGREE TO TAKE ALL NECESSARY STEPS TO ENSURE THAT THE TERMS AND CONDITIONS OF THIS AGREEMENT ARE NOT VIOLATED BY ANY PERSON OR ENTITY UNDER YOUR CONTROL OR IN YOUR SERVICE. THIS AGREEMENT APPLIES TO ALL USERS OF THE SERVICE. THE SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL NEITHER {0}, THE AUTHORS NOR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DIRECT OR INDIRECT LOSS, DAMAGES, LOSS OF DATA, STOP IN OPERATION OR BUSINESS, FAULTY DATA, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SERVICE OR THE USE OR OTHER DEALINGS IN THE SERVICE. YOU AGREE THAT YOUR USE OF THE SERVICE SHALL BE AT YOUR SOLE RISK. YOU ACKNOWLEDGE THAT {0} SHALL NOT BE LIABLE FOR USER SUBMISSIONS AND THAT {0} MAY NOT MODERATE USER SUBMITTED CONTENT. 
+&lt;/p&gt;
+
+&lt;p&gt;The Service may contain links to third party websites not owned or controlled by {0}. {0} has no control over and assumes no responsibility whatsoever for the content, privacy policies, or practices of any third party websites. In addition, {0} will not and cannot censor or edit the content of any third-party site. By using the Service, you expressly relieve {0} from any and all liability arising from your use of any third-party website. Accordingly, {0} encourage you to read the terms and conditions and privacy policy of each stored website that you visit using the Service. 
+&lt;/p&gt;
+
+&lt;p&gt;You are not allowed to use the Service to store copyright protected content or to store proprietary content without permission of the copyright owner(s) or content owner(s).&lt;/p&gt;
+
+&lt;p&gt;{0} encourage you to read the terms and conditions and policies of a third-party website before you store any of its content using the Service; by using the Service you confirm that you have read and understood the third-party website terms and that you agree with the third-party website terms and will abide by them. 
+&lt;/p&gt;
+
+&lt;p&gt;You are not allowed to sell access to any part of the Service, either acting on your own initiative or acting as a representative of {0}.&lt;/p&gt;
+
+&lt;p&gt;You agree that your participation in beta testing, your suggestions, feedback, advice, feature requests, or any other kind of input, does not give you any ownership of any part of {0}'s products, services, or printed or online material in any manner. You agree that all your participation in beta testing, submitting suggestions, advice, feature requests, and any other kind of input is strictly voluntary and will not be rewarded in any manner, monetary or otherwise.&lt;/p&gt;
+
+&lt;p&gt;You agree to not use any kind of automated computer program to access the Service in a manner that sends more than fifty requests per minute to the Service. Automated computer programs, including but not limited to, "robots" or "spiders" from search engines are not allowed to exceed the fifty (50) request limit and must apply to the rules stated in http://www.{0}.net/robots.txt when crawling or indexing the contents of the Service. {0} reserves all rights to discontinue any aspect or part of the Service at any time and without warning or notice. {0} reserves all rights to remove any stored content without prior notice.&lt;/p&gt;
+
+&lt;p&gt;These Terms of Service, and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by {0} without restriction. Using the Service to store content does not in any way grant you any kind of ownership of the Service. Using the Service to store content does not in any way grant you any kind of ownership of the stored content that you did not have prior to storing the content.&lt;/p&gt;
+
+&lt;p&gt;By using the Service, you consent to the terms of our Privacy Policy. Should the Privacy Policy change, we intend to take every reasonable step to ensure that these changes are brought to your attention by posting all changes prominently on our web site for a reasonable period of time.&lt;/p&gt;</value>
+    <comment>Replace uses {0} for company name and {1} for the current year.</comment>
+  </data>
+  <data name="TermsTitle" xml:space="preserve">
+    <value>Terms and conditions</value>
+  </data>
+  <data name="CommentingMenuItemName" xml:space="preserve">
+    <value>Help on commenting</value>
   </data>
 </root>

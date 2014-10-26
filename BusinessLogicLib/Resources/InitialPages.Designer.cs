@@ -61,8 +61,46 @@ namespace VeraWAF.WebPages.Bll.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;p&gt;
-        ///	Vivamus quam ex, suscipit non risus non, cursus malesuada tellus.&lt;/p&gt;.
+        ///   Looks up a localized string similar to {0} allows for commenting on certain page templates, users can markup comments with BBCode&apos;s..
+        /// </summary>
+        internal static string CommentingIngress {
+            get {
+                return ResourceManager.GetString("CommentingIngress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help on commenting.
+        /// </summary>
+        internal static string CommentingMenuItemName {
+            get {
+                return ResourceManager.GetString("CommentingMenuItemName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help on commenting.
+        /// </summary>
+        internal static string CommentingTitle {
+            get {
+                return ResourceManager.GetString("CommentingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;h3&gt;Introduction&lt;/h3&gt;
+        ///
+        ///&lt;p&gt;&lt;i&gt;BBCode &lt;/i&gt;or Bulletin Board Code is a lightweight markup language used to format posts in many message boards. The available tags are usually indicated by square brackets ([ ]) surrounding a keyword, and they are parsed by the message board system before being translated into a markup language that web browsers understand—usually HTML or XHTML.&lt;/p&gt;
+        ///&lt;p&gt;BBCode was first introduced in 1998 by the message board software Ultimate Bulletin Board (UBB). This is why BBCode is someti [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CommentMainContent {
+            get {
+                return ResourceManager.GetString("CommentMainContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;In principio erat Verbum et Verbum erat apud Deum et Deus erat Verbum.&lt;/p&gt;.
         /// </summary>
         internal static string FrontPageAsideContent {
             get {
@@ -118,6 +156,126 @@ namespace VeraWAF.WebPages.Bll.Resources {
         internal static string FrontPageTitle {
             get {
                 return ResourceManager.GetString("FrontPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to YOU MUST CAREFULLY READ THE FOLLOWING PRIVACY POLICIES BEFORE USING {0} (THE &quot;SERVICE&quot;). IF YOU DO NOT AGREE WITH THE POLICIES OF THIS AGREEMENT (THE &quot;PRIVACY POLICY&quot;), DO NOT USE THE SERVICE. USING ANY PART OF THE SERVICE INDICATES THAT YOU ACCEPT THESE POLICIES. ANY PART OF THE AGREEMENT MAY CHANGE AT ANY TIME WITHOUT FURTHER NOTICE, SO WE RECOMMEND THE USER TO PERIODICALLY REVIEW THE POLICIES IN THE AGREEMENT..
+        /// </summary>
+        internal static string PrivacyIngress {
+            get {
+                return ResourceManager.GetString("PrivacyIngress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;h3&gt;Introduction&lt;/h3&gt;
+        ///&lt;p&gt;{0} value our users privacy. The Service users e-mail address or other personal data will not be shared, rented or sold to any third party.&lt;/p&gt;
+        ///&lt;h3&gt;Commitment&lt;/h3&gt;
+        ///&lt;p&gt;We are committed to privacy and support current industry initiatives to preserve individual privacy rights on the Internet. Protecting your privacy online is an evolving area, and {0} is constantly evolving to meet these demands.&lt;/p&gt;
+        ///&lt;h3&gt;Security&lt;/h3&gt;
+        ///&lt;p&gt;Wherever your personal information may be held within the Se [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PrivacyMainContent {
+            get {
+                return ResourceManager.GetString("PrivacyMainContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Privacy policy.
+        /// </summary>
+        internal static string PrivacyTitle {
+            get {
+                return ResourceManager.GetString("PrivacyTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;h3&gt;Overview&lt;/h3&gt;
+        ///
+        ///&lt;p&gt;This web site provides a rich query language through the Query Parser; a lexer which interprets a string into a query.&lt;/p&gt;
+        ///
+        ///
+        ///&lt;h3&gt;Terms&lt;/h3&gt;
+        ///
+        ///&lt;p&gt;A query is broken up into terms and operators. There are two types of terms: Single Terms and Phrases.&lt;/p&gt;
+        ///
+        ///&lt;p&gt;A Single Term is a single word such as &quot;test&quot; or &quot;hello&quot;.&lt;/p&gt;
+        ///
+        ///&lt;p&gt;A Phrase is a group of words surrounded by double quotes such as &quot;hello dolly&quot;.&lt;/p&gt;
+        ///
+        ///&lt;p&gt;Multiple terms can be combined together with Boolean operators to fo [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string QuerySyntaxMainContent {
+            get {
+                return ResourceManager.GetString("QuerySyntaxMainContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Query syntax guide.
+        /// </summary>
+        internal static string QuerySyntaxTitle {
+            get {
+                return ResourceManager.GetString("QuerySyntaxTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of available Web syndication methods..
+        /// </summary>
+        internal static string SyndicationIngress {
+            get {
+                return ResourceManager.GetString("SyndicationIngress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;&lt;a href=&quot;/Syndication.aspx?path=/&quot;&gt;Everything published on {0}&lt;/a&gt;&lt;/p&gt;
+        ///&lt;p&gt;&lt;a href=&quot;/Syndication.aspx?path=/Forums/&quot;&gt;All forum posts on {0}&lt;/a&gt;&lt;/p&gt;.
+        /// </summary>
+        internal static string SyndicationMainContent {
+            get {
+                return ResourceManager.GetString("SyndicationMainContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Web Syndication.
+        /// </summary>
+        internal static string SyndicationTitle {
+            get {
+                return ResourceManager.GetString("SyndicationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to YOU MUST CAREFULLY READ THE FOLLOWING TERMS AND CONDITIONS BEFORE USING {0} (THE &quot;SERVICE&quot;). IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS OF THIS AGREEMENT (THE &quot;TERMS OF SERVICE&quot;), DO NOT USE THE SERVICE. USING ANY PART OF THE SERVICE INDICATES THAT YOU ACCEPT THESE TERMS. ANY PART OF THE AGREEMENT MAY CHANGE AT ANY TIME WITHOUT FURTHER NOTICE, SO WE RECOMMEND THE USER TO PERIODICALLY REVIEW THE TERMS AND CONDITIONS IN THE AGREEMENT..
+        /// </summary>
+        internal static string TermsIngress {
+            get {
+                return ResourceManager.GetString("TermsIngress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COPYRIGHT (C) {1} {0}. 
+        ///
+        ///&lt;p&gt;BY USING THIS SERVICE, YOU AGREE THAT THIS AGREEMENT IS A LEGALLY BINDING AND VALID CONTRACT, AGREE TO COMPLY WITH ALL RELEVANT INTELLECTUAL PROPERTY RIGHT LAWS AND ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT, AND FURTHER AGREE TO TAKE ALL NECESSARY STEPS TO ENSURE THAT THE TERMS AND CONDITIONS OF THIS AGREEMENT ARE NOT VIOLATED BY ANY PERSON OR ENTITY UNDER YOUR CONTROL OR IN YOUR SERVICE. THIS AGREEMENT APPLIES TO ALL USERS OF THE SERVICE. THE SERVICE IS PROVIDED &quot;AS IS [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TermsMainContent {
+            get {
+                return ResourceManager.GetString("TermsMainContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Terms and conditions.
+        /// </summary>
+        internal static string TermsTitle {
+            get {
+                return ResourceManager.GetString("TermsTitle", resourceCulture);
             }
         }
     }

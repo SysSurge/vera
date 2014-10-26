@@ -2,14 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.example.com/</loc>
-    <lastmod>2014-10-24T14:23:23Z</lastmod>
+    <lastmod>2014-10-26T19:31:10Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://www.example.com/default.aspx</loc>
-    <lastmod>2014-10-24T14:23:24Z</lastmod>
+    <loc>http://www.example.com/Default.aspx</loc>
+    <lastmod>2014-10-26T19:31:10Z</lastmod>
     <changefreq>hourly</changefreq>
     <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://www.example.com/Feeds.aspx</loc>
+    <lastmod>2014-10-26T19:31:11Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.example.com/Help/Commenting.aspx</loc>
+    <lastmod>2014-10-26T19:31:10Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.example.com/Help/Search-query-syntax.aspx.aspx</loc>
+    <lastmod>2014-10-26T19:31:10Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.example.com/Privacy.aspx</loc>
+    <lastmod>2014-10-26T19:31:10Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.example.com/Terms.aspx</loc>
+    <lastmod>2014-10-26T19:31:11Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

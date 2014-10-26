@@ -315,7 +315,7 @@ namespace VeraWAF.WebPages.Bll.Security
             // Add the rule to the database or update existing
             var datasource = new AzureTableStorageDataSource();
             if (datasource.AclRuleExists(accessControlEntity.PartitionKey, accessControlEntity.RowKey,
-                applicationName))
+                applicationName, System.Data.Services.Client.MergeOption.NoTracking))
             {
                 // Rule already exists, so update
                 datasource.Update(accessControlEntity);

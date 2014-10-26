@@ -208,10 +208,12 @@ namespace VeraWAF.WebPages.Bll
         /// <param name="template">Page template</param>
         /// <param name="headerContent">Page header content</param>
         /// <param name="asideContent">Page splash content</param>
+        /// <param name="ingress">Page ingress</param>
         /// <returns>Page entity</returns>
         PageEntity CreatePageEntityFromFormData(string virtualPath, string menuItemName, 
             string menuItemDescription, string title, string mainContent, bool showInMenu, 
-            bool index, string template, string headerContent, string asideContent)
+            bool index, string template, string headerContent, string asideContent, 
+            string ingress)
         {
             return new PageEntity
             {
@@ -237,7 +239,7 @@ namespace VeraWAF.WebPages.Bll
                 RollupImage = String.Empty,
                 MenuItemName = menuItemName,
                 MenuItemDescription = menuItemDescription,
-                AsideContent = asideContent
+                AsideContent = asideContent, Ingress = ingress
             };
         }
 
@@ -250,24 +252,55 @@ namespace VeraWAF.WebPages.Bll
             PageEntity page = CreatePageEntityFromFormData("/",
                 Bll.Resources.Template.RootMenuItemName,
                 Bll.Resources.Template.RootMenuItemDesc, Bll.Resources.InitialPages.FrontPageTitle, String.Empty,
-                true, false, ConfigurationManager.AppSettings["FrontpageTemplate"], String.Empty, String.Empty);
+                true, false, ConfigurationManager.AppSettings["FrontpageTemplate"], String.Empty, String.Empty, String.Empty);
             _datasource.Insert(page);
 
             // Add the front page
-            page = CreatePageEntityFromFormData("/default.aspx", Bll.Resources.Template.FrontpageMenuItemName,
+            page = CreatePageEntityFromFormData("/Default.aspx", Bll.Resources.Template.FrontpageMenuItemName,
                 Bll.Resources.InitialPages.FrontPageTitle, Bll.Resources.InitialPages.FrontPageTitle,
                 Bll.Resources.InitialPages.FrontPageMainContent, true, false, ConfigurationManager.AppSettings["FrontpageTemplate"],
-                Bll.Resources.InitialPages.FrontPageHeaderContent, Bll.Resources.InitialPages.FrontPageAsideContent
+                Bll.Resources.InitialPages.FrontPageHeaderContent, Bll.Resources.InitialPages.FrontPageAsideContent, String.Empty
                 );
             _datasource.Insert(page);
 
-            // Add the documentation example
-            //page = CreatePageEntityFromFormData("/documentation/default.aspx", Bll.Resources.InitialPages.DocumentationMenuItemName,
-            //    Bll.Resources.InitialPages.FrontPageTitle, Bll.Resources.InitialPages.FrontPageTitle,
-            //    Bll.Resources.InitialPages.FrontPageMainContent, true, false, ConfigurationManager.AppSettings["DocumentationTemplate"],
-            //    Bll.Resources.InitialPages.FrontPageHeaderContent, Bll.Resources.InitialPages.FrontPageAsideContent
-            //    );
-            //_datasource.Insert(page);
+            // Add the commenting help page
+            page = CreatePageEntityFromFormData("/Help/Commenting.aspx", Bll.Resources.InitialPages.CommentingMenuItemName,
+                Bll.Resources.InitialPages.CommentingTitle, Bll.Resources.InitialPages.CommentingTitle,
+                String.Format(Bll.Resources.InitialPages.CommentMainContent, ConfigurationManager.AppSettings["ApplicationName"]), false, true,
+                ConfigurationManager.AppSettings["GenericTemplate"], String.Empty, String.Empty, String.Format(Bll.Resources.InitialPages.CommentingIngress,
+                ConfigurationManager.AppSettings["ApplicationName"]));
+            _datasource.Insert(page);
+
+            // Add the privacy page
+            page = CreatePageEntityFromFormData("/Privacy.aspx", Bll.Resources.InitialPages.PrivacyTitle,
+                Bll.Resources.InitialPages.PrivacyTitle, Bll.Resources.InitialPages.PrivacyTitle,
+                String.Format(Bll.Resources.InitialPages.PrivacyMainContent, ConfigurationManager.AppSettings["companyName"]), false, true,
+                ConfigurationManager.AppSettings["GenericTemplate"], String.Empty, String.Empty, String.Format(Bll.Resources.InitialPages.PrivacyIngress,
+                ConfigurationManager.AppSettings["ApplicationName"]));
+            _datasource.Insert(page);
+
+            // Add the query syntax page
+            page = CreatePageEntityFromFormData("/Help/Search-query-syntax.aspx.aspx", Bll.Resources.InitialPages.QuerySyntaxTitle,
+                Bll.Resources.InitialPages.QuerySyntaxTitle, Bll.Resources.InitialPages.QuerySyntaxTitle,
+                Bll.Resources.InitialPages.QuerySyntaxMainContent, false, true, 
+                ConfigurationManager.AppSettings["GenericTemplate"], String.Empty, String.Empty, String.Empty);
+            _datasource.Insert(page);
+
+            // Add the RSS 2.0 syndication page
+            var title = String.Format(Bll.Resources.InitialPages.SyndicationTitle, ConfigurationManager.AppSettings["companyName"]);
+            page = CreatePageEntityFromFormData("/Feeds.aspx", title, title, title,
+                String.Format(Bll.Resources.InitialPages.SyndicationMainContent, ConfigurationManager.AppSettings["ApplicationName"]), false, true,
+                ConfigurationManager.AppSettings["GenericTemplate"], String.Empty, String.Empty, Bll.Resources.InitialPages.SyndicationIngress);
+            _datasource.Insert(page);
+
+            // Add the terms page
+            var mainContent = String.Format(Bll.Resources.InitialPages.TermsMainContent, ConfigurationManager.AppSettings["companyName"], 
+                DateTime.UtcNow.Year);
+            page = CreatePageEntityFromFormData("/Terms.aspx", Bll.Resources.InitialPages.TermsTitle,
+                Bll.Resources.InitialPages.TermsTitle, Bll.Resources.InitialPages.TermsTitle,
+                mainContent, false, true, ConfigurationManager.AppSettings["GenericTemplate"], String.Empty, String.Empty,
+                String.Format(Bll.Resources.InitialPages.TermsIngress, ConfigurationManager.AppSettings["ApplicationName"]));
+            _datasource.Insert(page);
 
             try
             {
@@ -278,7 +311,8 @@ namespace VeraWAF.WebPages.Bll
             {
                 /*
                  * Cloud command will fail by design when the solution is created for the first time, this is normal behaviour as the
-                 * user is not signed in as there are no users created yet. So we just ignore the thrown exception and continue as usual.
+                 * user is not signed in as there are no users created yet. So we just ignore the thrown exception and continue as if
+                 * nothing bad has happened.
                  */
             }
         }

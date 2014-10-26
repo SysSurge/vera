@@ -7,18 +7,19 @@ using System.Web;
 using System.Web.UI;
 using VeraWAF.AzureTableStorage;
 using HtmlAgilityPack;
+using VeraWAF.Core.Templates;
 using VeraWAF.WebPages.Bll;
 using VeraWAF.WebPages.Bll.Cloud;
 using VeraWAF.WebPages.Dal;
 
 namespace VeraWAF.WebPages.Templates {
-    public partial class Simple : Page {
-
-        private DateTime GetArticlePublishedDate(PageEntity page) {
+    public partial class Simple : PageTemplateBase 
+    {
+        DateTime GetArticlePublishedDate(PageEntity page) {
             return new DateTime(long.Parse(page.RowKey));
         }
 
-        private void SetArticlePublishedDate(PageEntity page) {
+        void SetArticlePublishedDate(PageEntity page) {
             var dateTimeTools = new DateUtilities();
             var publishedDate = GetArticlePublishedDate(page);
 
@@ -26,7 +27,7 @@ namespace VeraWAF.WebPages.Templates {
             timePublishedDate.InnerText = dateTimeTools.GetReadableDateAndTime(publishedDate, ReadableDateAntTimeTypes.Abbreviated);
         }
 
-        private void SetArticleModifiedDate(PageEntity page) {
+        void SetArticleModifiedDate(PageEntity page) {
             var dateTimeTools = new DateUtilities();
             var modifideDate = page.Timestamp;
 
@@ -40,23 +41,15 @@ namespace VeraWAF.WebPages.Templates {
             return userCache.GetUser(page.Author);
         }
 
-        //private void SetArticleAuthor(PageEntity page) {
-        //    var author = GetAuthor(page);
-        //    lnkAuthor.NavigateUrl = "/Account/?id=" + HttpUtility.UrlEncode(author.PartitionKey);
-
-        //    var userUtilities = new UserUtilities();
-        //    lnkAuthor.Text = HttpUtility.HtmlEncode(userUtilities.GetDisplayName(page.Author));
-        //}
-
-        private void SetArticleTitle(PageEntity page) {
+        void SetArticleTitle(PageEntity page) {
             litTitle.Text = page.Title;
         }
 
-        private void SetArticleIngress(PageEntity page) {
+        void SetArticleIngress(PageEntity page) {
             litIngress.Text = page.Ingress;
         }
 
-        private string ChangeToJailImages(string markup) {
+        string ChangeToJailImages(string markup) {
             var doc = new HtmlDocument();
             doc.LoadHtml(markup);
 
@@ -69,15 +62,15 @@ namespace VeraWAF.WebPages.Templates {
             return doc.DocumentNode.OuterHtml;
         }
 
-        private void SetArticleBody(PageEntity page) {
+        void SetArticleBody(PageEntity page) {
             litBody.Text = ChangeToJailImages(page.MainContent);
         }
 
-        private string GetJailImageMarkup(string src, string alt) {
+        string GetJailImageMarkup(string src, string alt) {
             return String.Format(VeraWAF.WebPages.Bll.Resources.Controls.JailImageMarkup2, new CdnUtilities().GetCdnUrl(src), alt);
         }
 
-        private void SetFigure(PageEntity page) {
+        void SetFigure(PageEntity page) {
             if (String.IsNullOrWhiteSpace(page.Figure)) return;
 
             var figureCaptionMarkup = String.Empty;
@@ -89,7 +82,7 @@ namespace VeraWAF.WebPages.Templates {
             litFigure.Text = String.Format("<figure>{0}{1}</figure>", jailImageMarkup, figureCaptionMarkup);
         }
 
-        private void SetMap(PageEntity page) {
+        void SetMap(PageEntity page) {
             if (page.GeolocationLong != 0.0 && page.GeolocationLat != 0.0) {
                 Map.Lat = page.GeolocationLat;
                 Map.Long = page.GeolocationLong;
@@ -99,7 +92,7 @@ namespace VeraWAF.WebPages.Templates {
             }
         }
 
-        private void InitFooterControls(PageEntity page)
+        void InitFooterControls(PageEntity page)
         {
             SetArticlePublishedDate(page);
             SetArticleModifiedDate(page);
@@ -107,7 +100,7 @@ namespace VeraWAF.WebPages.Templates {
             //SetArticleAuthor(page);            
         }
 
-        private void InitWidgets(PageEntity page) {
+        void InitWidgets(PageEntity page) {
             SetMap(page);
 
             contactUser1.Visible = page.ShowContactControl;
@@ -115,7 +108,7 @@ namespace VeraWAF.WebPages.Templates {
             comments1.Visible = page.AllowForComments;
         }
 
-        private void InitControls(PageEntity page)
+        void InitControls(PageEntity page)
         {
             InitFooterControls(page);
             
@@ -131,16 +124,16 @@ namespace VeraWAF.WebPages.Templates {
             InitWidgets(page);
         }
 
-        private void SetPageTitle(PageEntity page) {
+        void SetPageTitle(PageEntity page) {
             if (!String.IsNullOrWhiteSpace(page.Title))
                 Page.Title = Regex.Replace(page.Title, @"<[^>]*>", String.Empty);
         }
 
-        private string GetVirtualPath() {
+        string GetVirtualPath() {
             return Request.Url.AbsolutePath;
         }
 
-        private void SetPageMetaDescription(PageEntity page) {
+        void SetPageMetaDescription(PageEntity page) {
             var htmlDoc = new HtmlDocument();
 
             if (String.IsNullOrWhiteSpace(page.RollupText))
@@ -157,19 +150,19 @@ namespace VeraWAF.WebPages.Templates {
             }
         }
 
-        private void SetPageRdfaCreatedDate(PageEntity page) {
+        void SetPageRdfaCreatedDate(PageEntity page) {
             var dateTimeTools = new DateUtilities();
             var publishedDate = GetArticlePublishedDate(page);
             metaRdfaCreated.Attributes["content"] = dateTimeTools.GetCustomIso8601Date(publishedDate);
         }
 
-        private void SetPageRdfaModifiedDate(PageEntity page) {
+        void SetPageRdfaModifiedDate(PageEntity page) {
             var dateTimeTools = new DateUtilities();
             var modifiedDate = page.Timestamp;
             metaRdfaModified.Attributes["content"] = dateTimeTools.GetCustomIso8601Date(modifiedDate);
         }
 
-        private void SetPageRdfaSubjects(PageEntity page) {
+        void SetPageRdfaSubjects(PageEntity page) {
             if (!String.IsNullOrWhiteSpace(page.RdfSubjects)) {
                 var markup = new StringBuilder();
                 var subjects = page.RdfSubjects.Split(',');
@@ -181,7 +174,7 @@ namespace VeraWAF.WebPages.Templates {
             }
         }
 
-        private void SetPageMetaData(PageEntity page) {
+        void SetPageMetaData(PageEntity page) {
             metaMade.Attributes["href"] = "mailto:" + ConfigurationManager.AppSettings["AdminEmail"];
 
             SetPageRdfaCreatedDate(page);
