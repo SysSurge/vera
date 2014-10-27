@@ -26,7 +26,8 @@
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
-    <SilverlightApplicationList>{145CBDBB-A2C0-4646-A383-6B2F403F2072}|..\AzureSilverlightFileUploaderPlugIn\AzureSilverlightFileUploaderPlugIn.csproj|ClientBin|False</SilverlightApplicationList>
+    <SilverlightApplicationList>
+    </SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

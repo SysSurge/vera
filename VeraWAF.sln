@@ -7,7 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Www", "WebPages\Www.csproj"
 	ProjectSection(ProjectDependencies) = postProject
 		{D0DD8B2E-E3D1-40B9-B8EB-615412BBF875} = {D0DD8B2E-E3D1-40B9-B8EB-615412BBF875}
 		{516AA033-AE46-4DA3-92BC-232F50782664} = {516AA033-AE46-4DA3-92BC-232F50782664}
-		{145CBDBB-A2C0-4646-A383-6B2F403F2072} = {145CBDBB-A2C0-4646-A383-6B2F403F2072}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureQueue", "AzureQueue\AzureQueue.csproj", "{9D407A5D-AD75-4178-BDD0-D3CA71EF9B3F}"
@@ -34,8 +33,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLib", "DataAccessLib\DataAccessLib.csproj", "{9F7FADCD-5C22-41EA-8F7A-974A3CF26673}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLib", "BusinessLogicLib\BusinessLogicLib.csproj", "{ECA5F9B7-988F-46B9-AB00-51BF3D540573}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSilverlightFileUploaderPlugIn", "AzureSilverlightFileUploaderPlugIn\AzureSilverlightFileUploaderPlugIn.csproj", "{145CBDBB-A2C0-4646-A383-6B2F403F2072}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,10 +76,6 @@ Global
 		{ECA5F9B7-988F-46B9-AB00-51BF3D540573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECA5F9B7-988F-46B9-AB00-51BF3D540573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECA5F9B7-988F-46B9-AB00-51BF3D540573}.Release|Any CPU.Build.0 = Release|Any CPU
-		{145CBDBB-A2C0-4646-A383-6B2F403F2072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{145CBDBB-A2C0-4646-A383-6B2F403F2072}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{145CBDBB-A2C0-4646-A383-6B2F403F2072}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{145CBDBB-A2C0-4646-A383-6B2F403F2072}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

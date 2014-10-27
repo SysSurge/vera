@@ -280,7 +280,7 @@ namespace VeraWAF.WebPages.Bll
             _datasource.Insert(page);
 
             // Add the query syntax page
-            page = CreatePageEntityFromFormData("/Help/Search-query-syntax.aspx.aspx", Bll.Resources.InitialPages.QuerySyntaxTitle,
+            page = CreatePageEntityFromFormData("/Help/Search-query-syntax.aspx", Bll.Resources.InitialPages.QuerySyntaxTitle,
                 Bll.Resources.InitialPages.QuerySyntaxTitle, Bll.Resources.InitialPages.QuerySyntaxTitle,
                 Bll.Resources.InitialPages.QuerySyntaxMainContent, false, true, 
                 ConfigurationManager.AppSettings["GenericTemplate"], String.Empty, String.Empty, String.Empty);
@@ -458,19 +458,19 @@ namespace VeraWAF.WebPages.Bll
         /// </summary>
         public void InstallAll()
         {
-            if (CreateTablesIfNotExists())
-            {
-                AddDefaultPages();
-
-                AddDefaultAcls();
-            }
-
             CreateQueuesIfNotExists();
             CreateAdminUserIfNotExists();
 
             AddRoles();
 
             CreateBlobIfNotExists();
+
+            if (CreateTablesIfNotExists())
+            {
+                AddDefaultPages();
+
+                AddDefaultAcls();
+            }
         }
     }
 }
